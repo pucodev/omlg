@@ -1,0 +1,30 @@
+{
+  "name": "oh-my-logo-generator",
+  "version": "1.0.0",
+  "description": "Generator of logo using the library oh-my-logo",
+  "type": "module",
+  "scripts": {
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,ts,json,css,md,scss}": "prettier --write",
+    "*.{js,ts}": "eslint --fix"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "^2.10.0",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
+    "@tsconfig/node-ts": "^23.6.1",
+    "@tsconfig/node22": "^22.0.2",
+    "@types/node": "^24.2.1",
+    "eslint": "^9.15.0",
+    "eslint-plugin-jsdoc": "^50.4.3",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5",
+    "neostandard": "^0.11.7",
+    "prettier-plugin-packagejson": "^2.5.19",
+    "typescript": "^5.9.2"
+  },
+  "packageManager": "pnpm@9.12.3+sha512.cce0f9de9c5a7c95bef944169cc5dfe8741abfb145078c0d508b868056848a87c81e626246cb60967cbd7fd29a6c062ef73ff840d96b3c86c40ac92cf4a813ee"
+}
