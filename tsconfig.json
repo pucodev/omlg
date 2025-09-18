@@ -1,13 +1,14 @@
 {
-  "extends": [
-    "@tsconfig/node22/tsconfig.json",
-    "@tsconfig/node-ts/tsconfig.json"
+  "extends": "astro/tsconfigs/strict",
+  "include": [
+    ".astro/types.d.ts",
+    "**/*"
+  ],
+  "exclude": [
+    "dist"
   ],
   "compilerOptions": {
-    "outDir": "./dist",
-    "baseUrl": ".",
-    "rootDir": "."
-  },
-  "include": ["src/**/*", "tests/**/*"],
-  "exclude": ["node_modules"]
+    "jsx": "react-jsx",
+    "jsxImportSource": "preact"
+  }
 }

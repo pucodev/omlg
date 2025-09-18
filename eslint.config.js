@@ -32,6 +32,7 @@ export default [
           functions: 'always-multiline',
         },
       ],
+      '@stylistic/jsx-quotes': ['error', 'prefer-double'],
       'jsdoc/tag-lines': ['warn', 'any', { startLines: 1 }],
     },
   },
