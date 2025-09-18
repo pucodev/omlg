@@ -1,6 +1,7 @@
 import { spawn } from 'child_process'
 
 import { applog } from '#utils/logger'
+import { sanitizeAndMakeResponsiveSvg } from '#utils/sanitize-svg'
 
 const palletes = [
   {
@@ -130,7 +131,7 @@ export async function generateSvg(
         return
       }
 
-      resolve(output)
+      resolve(sanitizeAndMakeResponsiveSvg(output))
     })
   })
 }
