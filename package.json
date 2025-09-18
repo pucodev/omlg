@@ -3,27 +3,15 @@
   "version": "1.0.0",
   "description": "Generator of logo using the library oh-my-logo",
   "type": "module",
-  "imports": {
-    "#astro-components/*": "./src/components/astro/*.astro",
-    "#utils/*": "./src/js/utils/*",
-    "#assets/*": "./src/assets/*"
-  },
+  "workspaces": [
+    "apps/*"
+  ],
   "scripts": {
-    "astro": "astro",
-    "build": "astro build",
-    "dev": "astro dev",
-    "prepare": "husky",
-    "preview": "astro preview"
+    "web:dev": "pnpm --filter @omlg/web dev"
   },
   "lint-staged": {
     "*.{js,ts,json,css,md,scss}": "prettier --write",
     "*.{js,ts}": "eslint --fix"
-  },
-  "dependencies": {
-    "@astrojs/preact": "^4.1.1",
-    "@glidejs/glide": "^3.7.1",
-    "astro": "^5.13.8",
-    "preact": "^10.27.2"
   },
   "devDependencies": {
     "@stylistic/eslint-plugin": "^2.10.0",

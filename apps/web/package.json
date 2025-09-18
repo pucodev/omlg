@@ -1,0 +1,23 @@
+{
+  "name": "@omlg/web",
+  "version": "1.0.0",
+  "type": "module",
+  "imports": {
+    "#astro-components/*": "./src/components/astro/*.astro",
+    "#utils/*": "./src/js/utils/*",
+    "#assets/*": "./src/assets/*"
+  },
+  "scripts": {
+    "astro": "astro",
+    "build": "astro build",
+    "dev": "astro dev",
+    "prepare": "husky",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/preact": "^4.1.1",
+    "@glidejs/glide": "^3.7.1",
+    "astro": "^5.13.8",
+    "preact": "^10.27.2"
+  }
+}
