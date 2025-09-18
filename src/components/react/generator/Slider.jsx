@@ -1,7 +1,8 @@
 import Glide from '@glidejs/glide'
 import { useEffect, useRef } from 'preact/hooks'
 
-import { OMLG_PALLETE } from '../../../js/utils/omlgPallete'
+import { OMLG_PALLETE } from '#utils/omlgPallete'
+
 import Logo from './Logo'
 
 export default function Slider() {
@@ -57,9 +58,7 @@ export default function Slider() {
                   className="w-100 card is-outlined px-3 py-4"
                   onClick={() => selectTheme(index)}
                 >
-                  {/* <div className="card-body"> */}
                   <Logo src={item.img} />
-                  {/* </div> */}
                 </div>
                 <div className="is-text-center is-text-muted mt-1 is-font-size-7">
                   {item.name}

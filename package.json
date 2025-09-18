@@ -5,6 +5,7 @@
   "type": "module",
   "imports": {
     "#astro-components/*": "./src/components/astro/*.astro",
+    "#utils/*": "./src/js/utils/*",
     "#assets/*": "./src/assets/*"
   },
   "scripts": {
