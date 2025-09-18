@@ -1,3 +1,4 @@
+import fastifyCors from '@fastify/cors'
 import fastifyFormbody from '@fastify/formbody'
 import Fastify from 'fastify'
 
@@ -16,6 +17,11 @@ const fastify = Fastify({
         },
       }
     : true,
+})
+
+await fastify.register(fastifyCors, {
+  origin: true,
+  methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'OPTIONS'],
 })
 
 fastify.register(fastifyFormbody)
