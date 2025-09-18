@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OMLG</title>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@3.0.0/dist/iconify-icon.min.js"></script>
+    <link href="./styles/pucoui.css" rel="stylesheet" />
+    <link href="./styles/index.css" rel="stylesheet" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="is-ocean">
+    <div class="is-relative">
+      <div class="bg-gradient"></div>
+      <div class="bg-gradient-square"></div>
+      <div class="is-relative">
+        <header>
+          <div class="container is-flex is-justify-content-space-between py-5">
+            <figure class="image" style="max-width: 140px">
+              <img src="./assets/logo.svg" alt="OMLG logo" />
+            </figure>
+
+            <div class="is-hstack">
+              <button class="btn is-outlined">
+                <iconify-icon class="icon" icon="cib:github"></iconify-icon>
+                <span>Github</span>
+              </button>
+              <button class="btn is-outlined">
+                <iconify-icon
+                  class="icon"
+                  icon="solar:star-bold-duotone"
+                ></iconify-icon>
+                <span>Star</span>
+              </button>
+            </div>
+          </div>
+        </header>
+
+        <!-- HERO SECTION -->
+        <section>
+          <div
+            class="container is-vstack is-text-center is-gap-6"
+            style="padding: 8rem 0"
+          >
+            <h1 class="hero-title">
+              Generate and Download <br />Oh My Logo<br />
+              Image
+            </h1>
+            <div class="is-hstack">
+              <button class="btn is-md">Get Started</button>
+              <button class="btn is-outlined is-md">
+                <iconify-icon
+                  class="icon"
+                  icon="solar:star-bold-duotone"
+                ></iconify-icon>
+                <span>Star</span>
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <!-- GENERATOR -->
+        <section class="pt-5 pb-8">
+          <div class="container">
+            <div class="card bg-gray">
+              <div class="card-body">
+                <!-- PALLETE SLIDER -->
+                <div class="is-hstack is-gap-4 is-justify-content-center py-5">
+                  <div class="card is-outlined card--omlg-preview">
+                    <div class="card-body">
+                      <figure class="image" style="max-width: 100px">
+                        <img src="./assets/logo.svg" alt="OMLG logo" />
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="card is-outlined card--omlg-preview">
+                    <div class="card-body">
+                      <figure class="image" style="max-width: 100px">
+                        <img src="./assets/logo.svg" alt="OMLG logo" />
+                      </figure>
+                    </div>
+                  </div>
+                  <div class="card is-outlined card--omlg-preview">
+                    <div class="card-body">
+                      <figure class="image" style="max-width: 100px">
+                        <img src="./assets/logo.svg" alt="OMLG logo" />
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- CARD OPTIONS -->
+                <div class="generator-container">
+                  <div class="card is-outlined generator__mode">
+                    <div class="card-body">
+                      <!-- MODE -->
+                      <div class="is-flex is-flex-column is-gap-3">
+                        <div class="is-font-bold">Mode:</div>
+                        <div class="is-flex is-gap-4">
+                          <div class="card is-outlined card--omlg-preview">
+                            <div class="card-body">
+                              <figure class="image" style="max-width: 100px">
+                                <img src="./assets/logo.svg" alt="OMLG logo" />
+                              </figure>
+                            </div>
+                          </div>
+                          <div class="card is-outlined card--omlg-preview">
+                            <div class="card-body">
+                              <figure class="image" style="max-width: 100px">
+                                <img src="./assets/logo.svg" alt="OMLG logo" />
+                              </figure>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- PREVIEW -->
+                  <div class="card is-outlined generator__preview">
+                    <div class="card-body">
+                      <div class="field">
+                        <label for="omlg-text" class="label"
+                          >Enter your text:</label
+                        >
+                        <textarea
+                          id="omlg-text"
+                          class="textarea"
+                          placeholder="Enter your text"
+                          rows="2"
+                        ></textarea>
+                      </div>
+                      <button class="btn w-100 mt-2">Generate</button>
+
+                      <!-- PREVIEW IMAGE -->
+                      <figure class="image w-100 py-6">
+                        <img src="./assets/logo.svg" alt="OMLG logo" />
+                      </figure>
+
+                      <!-- DOWNLOAD -->
+                      <div class="is-hstack">
+                        <button class="btn w-100 is-outlined">SVG</button>
+                        <button class="btn w-100 is-outlined">PNG</button
+                        ><button class="btn w-100 is-outlined" disabled>
+                          URL
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- OTHER OPTIONS -->
+                  <div class="card is-outlined generator__other-options">
+                    <div class="card-body">
+                      <div class="card-title">Other options</div>
+
+                      <div class="card-content is-flex is-flex-column is-gap-3">
+                        <!-- LETTER SPACING -->
+                        <div class="field">
+                          <label class="label">Letter spacing:</label>
+                          <select class="select">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                          </select>
+                        </div>
+
+                        <!-- GRADIENT DIRECTION -->
+                        <div class="field">
+                          <label class="label">Gradient direction:</label>
+                          <select class="select">
+                            <option value="1">vertical</option>
+                            <option value="2">horizontal</option>
+                            <option value="3">diagonal</option>
+                          </select>
+                        </div>
+
+                        <div class="is-hstack mt-2">
+                          <div class="field switch">
+                            <input type="checkbox" role="switch" id="switch2" />
+                            <label class="slider" for="switch2"></label>
+                          </div>
+                          <label for="switch2">Reverse gradient</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="py-8 mt-4"></div>
+  </body>
+</html>

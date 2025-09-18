@@ -1,0 +1,145 @@
+html {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+}
+
+.is-sunset {
+  --pui-color-primary: #ff6460;
+  --color-gradient: 255, 151, 102;
+}
+
+.is-ocean {
+  --pui-color-primary: #764ba2;
+  --color-gradient: 102, 126, 234;
+}
+
+.is-matrix {
+  --pui-color-primary: #008f11;
+  --color-gradient: 0, 255, 65;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.bg-gradient-square {
+  inset: 0;
+  position: absolute;
+  background-image:
+    linear-gradient(to right, rgba(226, 232, 249, 0.3) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(226, 232, 249, 0.3) 1px, transparent 1px);
+  background-size: 24px 24px;
+
+  /* Máscara para efecto degradado */
+  -webkit-mask-image: radial-gradient(
+    ellipse 70% 60% at 50% 0%,
+    #000 60%,
+    transparent 100%
+  );
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: cover;
+
+  mask-image: radial-gradient(
+    ellipse 70% 60% at 50% 0%,
+    #000 60%,
+    transparent 100%
+  );
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: cover;
+}
+
+.bg-gradient {
+  inset: 0;
+  position: absolute;
+
+  /* background-image: */
+  /*   radial-gradient( */
+  /*     circle at top right, */
+  /*     rgba(0, 187, 249, 0.3), */
+  /*     transparent 45% */
+  /*   ), */
+  /*   radial-gradient(circle at 0% 60%, rgba(0, 187, 249, 0.2), transparent 35%); */
+
+  background-image:
+    radial-gradient(
+      circle at top right,
+      rgba(var(--color-gradient), 0.25),
+      transparent 45%
+    ),
+    radial-gradient(
+      circle at 0% 60%,
+      rgba(var(--color-gradient), 0.2),
+      transparent 35%
+    );
+
+  /* background-image: */
+  /*   radial-gradient( */
+  /*     circle at top right, */
+  /*     rgba(135, 96, 219, 0.3), */
+  /*     transparent 45% */
+  /*   ), */
+  /*   radial-gradient(circle at 0% 60%, rgba(135, 96, 219, 0.2), transparent 35%); */
+
+  /* background-image: radial-gradient( */
+  /*   circle at top center, */
+  /*   rgba(135, 96, 219, 0.3), */
+  /*   transparent 70% */
+  /* ); */
+}
+
+.hero-title {
+  font-size: 4rem;
+}
+
+.bg-gray {
+  background: #fafaf9;
+  background: linear-gradient(
+    180deg,
+    rgba(250, 250, 249, 1) 0%,
+    rgba(255, 255, 255, 1) 80%
+  );
+}
+
+.card--omlg-preview {
+  max-width: 100px;
+  width: 100px;
+}
+
+.generator-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.generator-container > .card {
+  width: 100%;
+}
+
+.generator__preview {
+  order: 3;
+}
+
+@media (min-width: 62rem) {
+  .generator-container {
+    flex-direction: row;
+  }
+  .generator__preview {
+    order: initial;
+  }
+}
+
+/* PUCOUI */
+.btn .icon:first-child:not(:last-child),
+.btn .badge:first-child:not(:last-child) {
+  margin-inline: 0 var(--pui-space-1);
+}
+.btn .icon:last-child:not(:first-child),
+.btn .badge:last-child:not(:first-child) {
+  margin-inline: var(--pui-space-1) 0;
+}
