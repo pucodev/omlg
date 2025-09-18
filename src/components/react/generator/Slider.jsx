@@ -1,5 +1,5 @@
 import Glide from '@glidejs/glide'
-import { useEffect, useRef } from 'preact/hooks'
+import { useEffect, useRef, useState } from 'preact/hooks'
 
 import { OMLG_PALLETE } from '#utils/omlgPallete'
 
@@ -9,10 +9,12 @@ export default function Slider() {
   const sliderRef = useRef(null)
   const glideRef = useRef(null)
   const items = OMLG_PALLETE
+  const [selectedItem, setSelectedItem] = useState(1)
   console.log('RENDER SLIDER')
 
   function selectTheme(index) {
     console.log('index = ', index)
+    setSelectedItem(index)
   }
 
   function previous() {
@@ -53,14 +55,17 @@ export default function Slider() {
         <div className="glide__track" data-glide-el="track">
           <ul className="glide__slides">
             {items.map((item, index) => (
-              <li className="glide__slide" key={index}>
+              <li
+                className={`glide__slide card-pallete-slider ${index === selectedItem ? 'is-active' : ''}`}
+                key={index}
+              >
                 <div
-                  className="w-100 card is-outlined px-3 py-4"
+                  className={`w-100 card is-outlined px-3 py-4 is-primary ${index === selectedItem ? 'surface' : ''}`}
                   onClick={() => selectTheme(index)}
                 >
                   <Logo src={item.img} />
                 </div>
-                <div className="is-text-center is-text-muted mt-1 is-font-size-7">
+                <div className="is-text-center pallete-name mt-1 is-font-size-7">
                   {item.name}
                 </div>
               </li>

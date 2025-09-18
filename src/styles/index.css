@@ -147,6 +147,15 @@ html {
   width: 0px !important;
 }
 
+.card-pallete-slider.is-active .pallete-name {
+  font-weight: 700;
+}
+
+.card-pallete-slider.is-active .card {
+  border-width: 2px;
+  border-color: #9ca9a5;
+}
+
 /* PUCOUI */
 .btn .icon:first-child:not(:last-child),
 .btn .badge:first-child:not(:last-child) {
