@@ -4,9 +4,8 @@
   "type": "module",
   "imports": {
     "#utils/*": "./src/core/utils/*.ts",
+    "#scripts/*": "./src/domain/scripts/*.ts",
     "#config/*": "./src/core/config/*.ts",
-    "#db/*": "./src/infra/db/*.ts",
-    "#services/*": "./src/infra/services/*.ts",
     "#routes/*": "./src/api/v1/routes/*.ts"
   },
   "scripts": {
