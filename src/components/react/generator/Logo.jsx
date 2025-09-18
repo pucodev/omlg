@@ -1,10 +1,7 @@
-import logo from '../../../assets/logo.svg'
-
-export default function Logo() {
+export default function Logo({ src }) {
   return (
     <figure className="image">
-      <img src={logo.src} alt="OMLG logo" />
-      {/* <LogoSvg /> */}
+      <img src={src} alt="OMLG logo" />
     </figure>
   )
 }
