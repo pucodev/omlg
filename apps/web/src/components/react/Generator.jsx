@@ -1,11 +1,14 @@
 import { useEffect, useState } from 'preact/hooks'
 
+import OmlgService from '../../js/services/omlg.service'
 import Logo from './generator/Logo'
 import Slider from './generator/Slider'
+import SvgFromApi from './utils/SvgFromApi'
 
 export default function Generator() {
   const [text, setText] = useState('')
   const [letterSpacing, setLetterSpacing] = useState('1')
+  const [svg, setSvg] = useState('')
 
   const gradientDirectionValues = ['vertical', 'horizontal', 'diagonal']
   const [gradientDirection, setGradientDirection] = useState(
@@ -15,6 +18,15 @@ export default function Generator() {
   useEffect(() => {
     console.log('UPDATE IMAGE')
   }, [text, letterSpacing, gradientDirection])
+
+  async function submit() {
+    const response = await OmlgService.getSvg({
+      text,
+      palette: 'sunset',
+    })
+    console.log('response', response.data)
+    setSvg(response.data)
+  }
 
   return (
     <section className="pt-5 pb-8">
@@ -64,11 +76,14 @@ export default function Generator() {
                       onChange={e => setText(e.target.value)}
                     />
                   </div>
-                  <button className="btn w-100 mt-2">Generate</button>
+                  <button className="btn w-100 mt-2" onClick={submit}>
+                    Generate
+                  </button>
 
                   {/* <!-- PREVIEW IMAGE --> */}
                   <figure className="image w-100 py-6">
                     {/* <img src={logo.src} alt="OMLG logo" /> */}
+                    <SvgFromApi svgString={svg} />
                   </figure>
 
                   {/* <!-- DOWNLOAD --> */}
