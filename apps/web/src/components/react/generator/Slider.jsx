@@ -5,7 +5,7 @@ import { OMLG_PALLETE } from '#utils/omlgPallete'
 
 import Logo from './Logo'
 
-export default function Slider() {
+export default function Slider({ onSelectPalette }) {
   const sliderRef = useRef(null)
   const glideRef = useRef(null)
   const items = OMLG_PALLETE
@@ -15,6 +15,10 @@ export default function Slider() {
   function selectTheme(index) {
     console.log('index = ', index)
     setSelectedItem(index)
+
+    if (typeof onSelectPalette === 'function') {
+      onSelectPalette(items[index])
+    }
   }
 
   function previous() {
@@ -60,7 +64,7 @@ export default function Slider() {
                 key={index}
               >
                 <div
-                  className={`w-100 card is-outlined px-3 py-4 is-primary ${index === selectedItem ? 'surface' : ''}`}
+                  className={`w-100 card is-outlined card-omlg ${index === selectedItem ? 'is-active' : ''}`}
                   onClick={() => selectTheme(index)}
                 >
                   <Logo src={item.img} />

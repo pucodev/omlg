@@ -85,7 +85,7 @@ export async function generateSvg(
     }
 
     // Letter spacing
-    if (options.letterSpacing) {
+    if (typeof options.letterSpacing !== 'undefined') {
       omlOptions.push(`--letter-spacing ${options.letterSpacing}`)
     }
 

@@ -106,9 +106,39 @@ html {
   );
 }
 
-.card--omlg-preview {
+.card-omlg {
+  padding: var(--pui-space-4) var(--pui-space-3);
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.card-omlg::before {
+  content: ' ';
+  inset: 0;
+  position: absolute;
+  opacity: 0;
+  background-color: var(--pui-color-primary);
+  border-radius: inherit;
+  z-index: 0;
+}
+
+.card-omlg--mode {
   max-width: 100px;
-  width: 100px;
+}
+
+.card-omlg:hover::before {
+  opacity: 0.03;
+}
+
+.card-omlg.is-active {
+  border-width: 2px;
+  border-color: #9ca9a5;
+}
+
+.card-omlg.is-active::before {
+  opacity: 0.08;
 }
 
 .generator-container {
@@ -149,11 +179,6 @@ html {
 
 .card-pallete-slider.is-active .pallete-name {
   font-weight: 700;
-}
-
-.card-pallete-slider.is-active .card {
-  border-width: 2px;
-  border-color: #9ca9a5;
 }
 
 /* PUCOUI */

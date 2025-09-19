@@ -1,5 +1,9 @@
 import { useEffect, useState } from 'preact/hooks'
 
+import SvgLogoText from '#assets/logo-text.svg'
+import SvgLogoFilled from '#assets/logo.svg'
+import { OMLG_PALLETE } from '#utils/omlgPallete.js'
+
 import OmlgService from '../../js/services/omlg.service'
 import Logo from './generator/Logo'
 import Slider from './generator/Slider'
@@ -9,6 +13,9 @@ export default function Generator() {
   const [text, setText] = useState('')
   const [letterSpacing, setLetterSpacing] = useState('1')
   const [svg, setSvg] = useState('')
+  const [palette, setPalette] = useState(OMLG_PALLETE[0].name)
+  const [filled, setFilled] = useState(true)
+  const [reverseGradient, setReverseGradient] = useState(false)
 
   const gradientDirectionValues = ['vertical', 'horizontal', 'diagonal']
   const [gradientDirection, setGradientDirection] = useState(
@@ -22,10 +29,19 @@ export default function Generator() {
   async function submit() {
     const response = await OmlgService.getSvg({
       text,
-      palette: 'sunset',
+      palette,
+      filled,
+      letter_spacing: Number(letterSpacing),
+      gradien_direction: gradientDirection,
+      reverse_gradient: reverseGradient,
     })
     console.log('response', response.data)
     setSvg(response.data)
+  }
+
+  function selectPalette(palette) {
+    console.log('SLIDER ', palette)
+    setPalette(palette.name)
   }
 
   return (
@@ -35,7 +51,7 @@ export default function Generator() {
           <div className="card-body">
             {/* <!-- PALLETE SLIDER --> */}
             <div className="pb-5">
-              <Slider />
+              <Slider onSelectPalette={selectPalette} />
             </div>
 
             {/* <!-- CARD OPTIONS --> */}
@@ -46,16 +62,22 @@ export default function Generator() {
                   <div className="is-flex is-flex-column is-gap-3">
                     <div className="is-font-bold">Mode:</div>
                     <div className="is-flex is-gap-4">
-                      <div className="card is-outlined card--omlg-preview">
-                        <div className="card-body">
-                          <Logo />
-                        </div>
-                      </div>
-                      <div className="card is-outlined card--omlg-preview">
-                        <div className="card-body">
-                          <Logo />
-                        </div>
-                      </div>
+                      <button
+                        className={`card is-outlined card-omlg card-omlg--mode ${filled ? 'is-active' : ''}`}
+                        onClick={() => setFilled(true)}
+                      >
+                        <figure className="image">
+                          <img src={SvgLogoFilled.src} alt="OMLG logo" />
+                        </figure>
+                      </button>
+                      <button
+                        className={`card is-outlined card-omlg card-omlg--mode ${!filled ? 'is-active' : ''}`}
+                        onClick={() => setFilled(false)}
+                      >
+                        <figure className="image">
+                          <img src={SvgLogoText.src} alt="OMLG logo" />
+                        </figure>
+                      </button>
                     </div>
                   </div>
                 </div>
@@ -82,7 +104,6 @@ export default function Generator() {
 
                   {/* <!-- PREVIEW IMAGE --> */}
                   <figure className="image w-100 py-6">
-                    {/* <img src={logo.src} alt="OMLG logo" /> */}
                     <SvgFromApi svgString={svg} />
                   </figure>
 
@@ -113,9 +134,9 @@ export default function Generator() {
                         value={letterSpacing}
                         onChange={e => setLetterSpacing(e.target.value)}
                       >
-                        {[...new Array(5)].map((_i, index) => (
-                          <option value={`${index + 1}`} key={index}>
-                            {index + 1}
+                        {[...new Array(8)].map((_i, index) => (
+                          <option value={`${index}`} key={index}>
+                            {index}
                           </option>
                         ))}
                       </select>
@@ -146,6 +167,8 @@ export default function Generator() {
                           type="checkbox"
                           role="switch"
                           id="reverse-gradient"
+                          checked={reverseGradient}
+                          onChange={() => setReverseGradient(prev => !prev)}
                         />
                         <label className="slider" htmlFor="reverse-gradient" />
                       </div>
