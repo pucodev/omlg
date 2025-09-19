@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="144.57" height="30.632" version="1.1" viewBox="0 0 144.57 30.632" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        * {
+            font-family: Courier, monospace;
+            font-size: 14px;
+        }
+        tspan, text {
+            font-variant-ligatures: none;
+            dominant-baseline: central;
+            white-space: pre;
+            fill: #bbbbbb;
+        }
+        .bg {
+            stroke-width: "0.5px";
+        }
+
+        .fc0 { fill: #667eea; }
+        .fc1 { fill: #677be6; }
+        .fc2 { fill: #6878e2; }
+        .fc3 { fill: #6975dd; }
+        .fc4 { fill: #6a72d9; }
+        .fc5 { fill: #6b6fd5; }
+        .fc6 { fill: #6c6cd1; }
+        .fc7 { fill: #6d69cc; }
+        .fc8 { fill: #6e66c8; }
+        .fc9 { fill: #6e63c4; }
+        .fc10 { fill: #6f60c0; }
+        .fc11 { fill: #705dbb; }
+        .fc12 { fill: #715ab7; }
+        .fc13 { fill: #7257b3; }
+        .fc14 { fill: #7354af; }
+        .fc15 { fill: #7451aa; }
+        .fc16 { fill: #754ea6; }
+        .fc17 { fill: #764ba2; }
+    </style>
+<text y="9.4951172"><tspan class="fc0" x="0"> </tspan><tspan class="fc1" x="8">█</tspan><tspan class="fc2" x="16">▀</tspan><tspan class="fc3" x="24">█</tspan><tspan class="fc4" x="32"> </tspan><tspan class="fc5" x="40">█</tspan><tspan class="fc6" x="48">▀</tspan><tspan class="fc7" x="56">▄</tspan><tspan class="fc8" x="64">▀</tspan><tspan class="fc9" x="72">█</tspan><tspan class="fc10" x="80"> </tspan><tspan class="fc11" x="88">█</tspan><tspan class="fc12" x="96"> </tspan><tspan class="fc13" x="104"> </tspan><tspan class="fc14" x="112"> </tspan><tspan class="fc15" x="120">█</tspan><tspan class="fc16" x="128">▀</tspan><tspan class="fc17" x="136">▀</tspan></text>
+<text y="23.495117"><tspan class="fc0" x="0"> </tspan><tspan class="fc1" x="8">█</tspan><tspan class="fc2" x="16">▄</tspan><tspan class="fc3" x="24">█</tspan><tspan class="fc4" x="32"> </tspan><tspan class="fc5" x="40">█</tspan><tspan class="fc6" x="48"> </tspan><tspan class="fc7" x="56">▀</tspan><tspan class="fc8" x="64"> </tspan><tspan class="fc9" x="72">█</tspan><tspan class="fc10" x="80"> </tspan><tspan class="fc11" x="88">█</tspan><tspan class="fc12" x="96">▄</tspan><tspan class="fc13" x="104">▄</tspan><tspan class="fc14" x="112"> </tspan><tspan class="fc15" x="120">█</tspan><tspan class="fc16" x="128">▄</tspan><tspan class="fc17" x="136">█</tspan></text>
+</svg>

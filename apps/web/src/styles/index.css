@@ -128,6 +128,16 @@ html {
   max-width: 100px;
 }
 
+.card-omlg--block {
+  width: 50%;
+  max-width: 140px;
+}
+.card-omlg--block__image {
+  min-height: 82px;
+  display: flex;
+  align-items: center;
+}
+
 .card-omlg:hover::before {
   opacity: 0.03;
 }
@@ -190,3 +200,9 @@ html {
 .btn .badge:last-child:not(:first-child) {
   margin-inline: var(--pui-space-1) 0;
 }
+
+/* ADD TO PUCOUI */
+/* .is-row { */
+/*   --pui-gap: var(--pui-space-0); */
+/*   gap: var(--pui-gap); */
+/* } */

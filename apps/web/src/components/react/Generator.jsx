@@ -2,10 +2,9 @@ import { useEffect, useState } from 'preact/hooks'
 
 import SvgLogoText from '#assets/logo-text.svg'
 import SvgLogoFilled from '#assets/logo.svg'
-import { OMLG_PALLETE } from '#utils/omlgPallete.js'
+import { OMLG_BLOCKS, OMLG_PALLETE } from '#utils/omlgPallete.js'
 
 import OmlgService from '../../js/services/omlg.service'
-import Logo from './generator/Logo'
 import Slider from './generator/Slider'
 import SvgFromApi from './utils/SvgFromApi'
 
@@ -16,6 +15,7 @@ export default function Generator() {
   const [palette, setPalette] = useState(OMLG_PALLETE[0].name)
   const [filled, setFilled] = useState(true)
   const [reverseGradient, setReverseGradient] = useState(false)
+  const [blockFont, setBlockFont] = useState(OMLG_BLOCKS[0].name)
 
   const gradientDirectionValues = ['vertical', 'horizontal', 'diagonal']
   const [gradientDirection, setGradientDirection] = useState(
@@ -34,13 +34,12 @@ export default function Generator() {
       letter_spacing: Number(letterSpacing),
       gradien_direction: gradientDirection,
       reverse_gradient: reverseGradient,
+      block_font: blockFont,
     })
-    console.log('response', response.data)
     setSvg(response.data)
   }
 
   function selectPalette(palette) {
-    console.log('SLIDER ', palette)
     setPalette(palette.name)
   }
 
@@ -78,6 +77,30 @@ export default function Generator() {
                           <img src={SvgLogoText.src} alt="OMLG logo" />
                         </figure>
                       </button>
+                    </div>
+                  </div>
+
+                  {/* <!-- BLOCK FONT --> */}
+                  <div className="is-flex is-flex-column is-gap-3">
+                    <div className="is-font-bold">Mode:</div>
+                    <div className="is-flex is-flex-wrap is-gap-3">
+                      {OMLG_BLOCKS.map((item, index) => (
+                        <button
+                          key={index}
+                          className={`card is-outlined card-omlg card-omlg--block ${blockFont === item.name ? 'is-active' : ''}`}
+                          onClick={() => setBlockFont(item.name)}
+                        >
+                          <div className="card-omlg--block__image">
+                            <figure className="image">
+                              <img src={item.img} alt={item.name} />
+                            </figure>
+                          </div>
+
+                          <div className="is-text-center is-font-size-7 mt-1">
+                            {item.name}
+                          </div>
+                        </button>
+                      ))}
                     </div>
                   </div>
                 </div>

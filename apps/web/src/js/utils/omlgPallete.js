@@ -1,3 +1,16 @@
+// Import Blocks
+import Block3dSvg from '#assets/block/3d.svg'
+import BlockBlockSvg from '#assets/block/block.svg'
+import BlockChromeSvg from '#assets/block/chrome.svg'
+import BlockGridSvg from '#assets/block/grid.svg'
+import BlockHugeSvg from '#assets/block/huge.svg'
+import BlockPalletSvg from '#assets/block/pallet.svg'
+import BlockShadeSvg from '#assets/block/shade.svg'
+import BlockSimple3dSvg from '#assets/block/simple3d.svg'
+import BlockSimpleSvg from '#assets/block/simple.svg'
+import BlockSimpleBlockSvg from '#assets/block/simpleBlock.svg'
+import BlockSlickSvg from '#assets/block/slick.svg'
+import BlockTinySvg from '#assets/block/tiny.svg'
 // Imports de los SVGs
 import CoralSvg from '#assets/pallete/omlg-coral.svg'
 import DawnSvg from '#assets/pallete/omlg-dawn.svg'
@@ -13,7 +26,21 @@ import OceanSvg from '#assets/pallete/omlg-ocean.svg'
 import PurpleSvg from '#assets/pallete/omlg-purple.svg'
 import SunsetSvg from '#assets/pallete/omlg-sunset.svg'
 
-// Array con los gradientes
+export const OMLG_BLOCKS = [
+  { name: 'block', img: BlockBlockSvg.src },
+  { name: '3d', img: Block3dSvg.src },
+  { name: 'chrome', img: BlockChromeSvg.src },
+  { name: 'grid', img: BlockGridSvg.src },
+  { name: 'huge', img: BlockHugeSvg.src },
+  { name: 'pallet', img: BlockPalletSvg.src },
+  { name: 'shade', img: BlockShadeSvg.src },
+  { name: 'simple', img: BlockSimpleSvg.src },
+  { name: 'simple3d', img: BlockSimple3dSvg.src },
+  { name: 'simpleBlock', img: BlockSimpleBlockSvg.src },
+  { name: 'slick', img: BlockSlickSvg.src },
+  { name: 'tiny', img: BlockTinySvg.src },
+]
+
 export const OMLG_PALLETE = [
   {
     name: 'grad-blue',

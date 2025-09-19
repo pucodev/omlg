@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="120.7" height="86.632" version="1.1" viewBox="0 0 120.7 86.632" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        * {
+            font-family: Courier, monospace;
+            font-size: 14px;
+        }
+        tspan, text {
+            font-variant-ligatures: none;
+            dominant-baseline: central;
+            white-space: pre;
+            fill: #bbbbbb;
+        }
+        .bg {
+            stroke-width: "0.5px";
+        }
+
+        .fc0 { fill: #667eea; }
+        .fc1 { fill: #677ae5; }
+        .fc2 { fill: #6877e0; }
+        .fc3 { fill: #6973db; }
+        .fc4 { fill: #6b6fd5; }
+        .fc5 { fill: #6c6cd0; }
+        .fc6 { fill: #6d68cb; }
+        .fc7 { fill: #6e65c6; }
+        .fc8 { fill: #6f61c1; }
+        .fc9 { fill: #705dbc; }
+        .fc10 { fill: #715ab7; }
+        .fc11 { fill: #7356b1; }
+        .fc12 { fill: #7452ac; }
+        .fc13 { fill: #754fa7; }
+        .fc14 { fill: #764ba2; }
+    </style>
+<text x="0.13671875" y="9.4951172"><tspan class="fc0" x="0.13671875">╋</tspan><tspan class="fc1" x="8.1367188">╋</tspan><tspan class="fc2" x="16.136719">╋</tspan><tspan class="fc3" x="24.136719">╋</tspan><tspan class="fc4" x="32.136719">╋</tspan><tspan class="fc5" x="40.136719">╋</tspan><tspan class="fc6" x="48.136719">╋</tspan><tspan class="fc7" x="56.136719">╋</tspan><tspan class="fc8" x="64.136719">┏</tspan><tspan class="fc9" x="72.136719">┓</tspan><tspan class="fc10" x="80.136719">╋</tspan><tspan class="fc11" x="88.136719">╋</tspan><tspan class="fc12" x="96.136719">╋</tspan><tspan class="fc13" x="104.13672">╋</tspan><tspan class="fc14" x="112.13672">╋</tspan></text>
+<text x="0.13671875" y="23.495117"><tspan class="fc0" x="0.13671875">┏</tspan><tspan class="fc1" x="8.1367188">━</tspan><tspan class="fc2" x="16.136719">━</tspan><tspan class="fc3" x="24.136719">┓</tspan><tspan class="fc4" x="32.136719">┏</tspan><tspan class="fc5" x="40.136719">┓</tspan><tspan class="fc6" x="48.136719">┏</tspan><tspan class="fc7" x="56.136719">┓</tspan><tspan class="fc8" x="64.136719">┃</tspan><tspan class="fc9" x="72.136719">┃</tspan><tspan class="fc10" x="80.136719">╋</tspan><tspan class="fc11" x="88.136719">┏</tspan><tspan class="fc12" x="96.136719">━</tspan><tspan class="fc13" x="104.13672">━</tspan><tspan class="fc14" x="112.13672">┓</tspan></text>
+<text x="0.13671875" y="37.495117"><tspan class="fc0" x="0.13671875">┃</tspan><tspan class="fc1" x="8.1367188">┏</tspan><tspan class="fc2" x="16.136719">┓</tspan><tspan class="fc3" x="24.136719">┃</tspan><tspan class="fc4" x="32.136719">┃</tspan><tspan class="fc5" x="40.136719">┗</tspan><tspan class="fc6" x="48.136719">┛</tspan><tspan class="fc7" x="56.136719">┃</tspan><tspan class="fc8" x="64.136719">┃</tspan><tspan class="fc9" x="72.136719">┃</tspan><tspan class="fc10" x="80.136719">╋</tspan><tspan class="fc11" x="88.136719">┃</tspan><tspan class="fc12" x="96.136719">┏</tspan><tspan class="fc13" x="104.13672">┓</tspan><tspan class="fc14" x="112.13672">┃</tspan></text>
+<text x="0.13671875" y="51.495117"><tspan class="fc0" x="0.13671875">┃</tspan><tspan class="fc1" x="8.1367188">┗</tspan><tspan class="fc2" x="16.136719">┛</tspan><tspan class="fc3" x="24.136719">┃</tspan><tspan class="fc4" x="32.136719">┃</tspan><tspan class="fc5" x="40.136719">┃</tspan><tspan class="fc6" x="48.136719">┃</tspan><tspan class="fc7" x="56.136719">┃</tspan><tspan class="fc8" x="64.136719">┃</tspan><tspan class="fc9" x="72.136719">┗</tspan><tspan class="fc10" x="80.136719">┓</tspan><tspan class="fc11" x="88.136719">┃</tspan><tspan class="fc12" x="96.136719">┗</tspan><tspan class="fc13" x="104.13672">┛</tspan><tspan class="fc14" x="112.13672">┃</tspan></text>
+<text x="0.13671875" y="65.495117"><tspan class="fc0" x="0.13671875">┗</tspan><tspan class="fc1" x="8.1367188">━</tspan><tspan class="fc2" x="16.136719">━</tspan><tspan class="fc3" x="24.136719">┛</tspan><tspan class="fc4" x="32.136719">┗</tspan><tspan class="fc5" x="40.136719">┻</tspan><tspan class="fc6" x="48.136719">┻</tspan><tspan class="fc7" x="56.136719">┛</tspan><tspan class="fc8" x="64.136719">┗</tspan><tspan class="fc9" x="72.136719">━</tspan><tspan class="fc10" x="80.136719">┛</tspan><tspan class="fc11" x="88.136719">┗</tspan><tspan class="fc12" x="96.136719">━</tspan><tspan class="fc13" x="104.13672">┓</tspan><tspan class="fc14" x="112.13672">┃</tspan></text>
+<text x="0.13671875" y="79.495117"><tspan class="fc0" x="0.13671875">╋</tspan><tspan class="fc1" x="8.1367188">╋</tspan><tspan class="fc2" x="16.136719">╋</tspan><tspan class="fc3" x="24.136719">╋</tspan><tspan class="fc4" x="32.136719">╋</tspan><tspan class="fc5" x="40.136719">╋</tspan><tspan class="fc6" x="48.136719">╋</tspan><tspan class="fc7" x="56.136719">╋</tspan><tspan class="fc8" x="64.136719">╋</tspan><tspan class="fc9" x="72.136719">╋</tspan><tspan class="fc10" x="80.136719">╋</tspan><tspan class="fc11" x="88.136719">┗</tspan><tspan class="fc12" x="96.136719">━</tspan><tspan class="fc13" x="104.13672">━</tspan><tspan class="fc14" x="112.13672">┛</tspan></text>
+</svg>
