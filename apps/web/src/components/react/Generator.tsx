@@ -2,24 +2,43 @@ import { useEffect, useState } from 'preact/hooks'
 
 import SvgLogoText from '#assets/logo-text.svg'
 import SvgLogoFilled from '#assets/logo.svg'
-import { OMLG_BLOCKS, OMLG_PALLETE } from '#utils/omlgPallete.js'
+import {
+  OMLG_BLOCKS,
+  OMLG_PALLETE,
+  type OmlgBlockNames,
+  type OmlgPaletteITem,
+  type OmlgPaletteName,
+} from '#utils/omlgPallete.js'
 
-import OmlgService from '../../js/services/omlg.service'
+import OmlgService, {
+  type GradientDirection,
+} from '../../js/services/omlg.service'
 import Slider from './generator/Slider'
 import SvgFromApi from './utils/SvgFromApi'
 
+/**
+ * Oh my logo generator
+ *
+ * @returns generator
+ */
 export default function Generator() {
   const [text, setText] = useState('')
   const [letterSpacing, setLetterSpacing] = useState('1')
   const [svg, setSvg] = useState('')
-  const [palette, setPalette] = useState(OMLG_PALLETE[0].name)
+  const [palette, setPalette] = useState<OmlgPaletteName>(OMLG_PALLETE[0].name)
   const [filled, setFilled] = useState(true)
   const [reverseGradient, setReverseGradient] = useState(false)
-  const [blockFont, setBlockFont] = useState(OMLG_BLOCKS[0].name)
+  const [blockFont, setBlockFont] = useState<OmlgBlockNames>(
+    OMLG_BLOCKS[0].name,
+  )
   const [isLoading, setIsLoading] = useState(false)
 
-  const gradientDirectionValues = ['vertical', 'horizontal', 'diagonal']
-  const [gradientDirection, setGradientDirection] = useState(
+  const gradientDirectionValues: GradientDirection[] = [
+    'vertical',
+    'horizontal',
+    'diagonal',
+  ]
+  const [gradientDirection, setGradientDirection] = useState<GradientDirection>(
     gradientDirectionValues[0],
   )
 
@@ -36,7 +55,9 @@ export default function Generator() {
     blockFont,
   ])
 
+  /** Send data to API and render image */
   async function submit() {
+    // TODO: Add error message
     setIsLoading(true)
     try {
       const response = await OmlgService.getSvg({
@@ -53,7 +74,12 @@ export default function Generator() {
     setIsLoading(false)
   }
 
-  function selectPalette(palette) {
+  /**
+   * Set palette to variable
+   *
+   * @param palette - Palette name
+   */
+  function selectPalette(palette: OmlgPaletteITem) {
     setPalette(palette.name)
   }
 
@@ -130,9 +156,9 @@ export default function Generator() {
                       id="omlg-text"
                       className="textarea"
                       placeholder="Enter your text"
-                      rows="2"
+                      rows={2}
                       value={text}
-                      onChange={e => setText(e.target.value)}
+                      onChange={e => setText(e.currentTarget.value || '')}
                     />
                   </div>
                   <button className="btn w-100 mt-2" onClick={submit}>
@@ -184,7 +210,7 @@ export default function Generator() {
                         id="letter-spacing"
                         className="select"
                         value={letterSpacing}
-                        onChange={e => setLetterSpacing(e.target.value)}
+                        onChange={e => setLetterSpacing(e.currentTarget.value)}
                       >
                         {[...new Array(8)].map((_i, index) => (
                           <option value={`${index}`} key={index}>
@@ -203,7 +229,11 @@ export default function Generator() {
                         id="gradient-direction"
                         className="select"
                         value={gradientDirection}
-                        onChange={e => setGradientDirection(e.target.value)}
+                        onChange={e =>
+                          setGradientDirection(
+                            e.currentTarget.value as GradientDirection,
+                          )
+                        }
                       >
                         {gradientDirectionValues.map((v, index) => (
                           <option value={v} key={index}>

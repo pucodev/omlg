@@ -1,19 +1,33 @@
 import Glide from '@glidejs/glide'
 import { useEffect, useRef, useState } from 'preact/hooks'
 
-import { OMLG_PALLETE } from '#utils/omlgPallete'
+import { OMLG_PALLETE, type OmlgPaletteITem } from '#utils/omlgPallete'
 
 import Logo from './Logo'
 
-export default function Slider({ onSelectPalette }) {
+export interface SliderProps {
+  onSelectPalette: (item: OmlgPaletteITem) => void
+}
+
+/**
+ * Render slider to select Palette
+ *
+ * @param props - Props
+ * @returns - Slider
+ */
+export default function Slider({ onSelectPalette }: SliderProps) {
   const sliderRef = useRef(null)
-  const glideRef = useRef(null)
+  const glideRef = useRef<Glide>(null)
   const items = OMLG_PALLETE
   const [selectedItem, setSelectedItem] = useState(0)
   console.log('RENDER SLIDER')
 
-  function selectTheme(index) {
-    console.log('index = ', index)
+  /**
+   * Handle select palette
+   *
+   * @param index - index of OmlPalette
+   */
+  function selectPalette(index: number) {
     setSelectedItem(index)
 
     if (typeof onSelectPalette === 'function') {
@@ -21,12 +35,18 @@ export default function Slider({ onSelectPalette }) {
     }
   }
 
+  /**
+   * Go to previous palette item
+   */
   function previous() {
     if (glideRef.current && glideRef.current.go) {
       glideRef.current.go('<')
     }
   }
 
+  /**
+   * Go to next palette item
+   */
   function next() {
     if (glideRef.current && glideRef.current.go) {
       glideRef.current.go('>')
@@ -45,7 +65,7 @@ export default function Slider({ onSelectPalette }) {
       glideRef.current.mount()
       console.log('RENDER USEEFFECT')
 
-      return () => glideRef.current.destroy()
+      return () => glideRef.current?.destroy()
     }
   }, [])
 
@@ -65,7 +85,7 @@ export default function Slider({ onSelectPalette }) {
               >
                 <div
                   className={`w-100 card is-outlined card-omlg ${index === selectedItem ? 'is-active' : ''}`}
-                  onClick={() => selectTheme(index)}
+                  onClick={() => selectPalette(index)}
                 >
                   <Logo src={item.img} />
                 </div>

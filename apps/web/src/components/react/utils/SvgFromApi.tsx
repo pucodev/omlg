@@ -6,12 +6,11 @@ import { useEffect, useRef } from 'preact/hooks'
  * It sanitizes the provided SVG string using DOMPurify before injection to prevent XSS attacks.
  * The SVG is styled to take full width and a maximum height within the Shadow DOM.
  *
- * @param {object} props - The props for the SvgFromApi component.
- * @param {string} props.svgString - The SVG string content to be rendered. This string will be sanitized and injected into a Shadow DOM.
- * @returns {JSX.Element} A div element that acts as the host for the Shadow DOM containing the SVG.
+ * @param props - The props for the SvgFromApi component.
+ * @returns A div element that acts as the host for the Shadow DOM containing the SVG.
  */
-export default function SvgFromApi({ svgString }) {
-  const hostRef = useRef(null)
+export default function SvgFromApi({ svgString }: { svgString: string }) {
+  const hostRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     if (hostRef.current) {
@@ -26,14 +25,16 @@ export default function SvgFromApi({ svgString }) {
       })
 
       // inject inside the Shadow DOM
-      hostRef.current.shadowRoot.innerHTML = `
-      <style>
-        svg {
-          width: 100%;
-          max-height: 200px;
-        }
-      </style>
-      ${cleanSvg}`
+      if (hostRef.current.shadowRoot) {
+        hostRef.current.shadowRoot.innerHTML = `
+        <style>
+          svg {
+            width: 100%;
+            max-height: 200px;
+          }
+        </style>
+        ${cleanSvg}`
+      }
     }
   }, [svgString])
 

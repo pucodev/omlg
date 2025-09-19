@@ -39,7 +39,9 @@ export const OMLG_BLOCKS = [
   { name: 'simpleBlock', img: BlockSimpleBlockSvg.src },
   { name: 'simple3d', img: BlockSimple3dSvg.src },
   { name: '3d', img: Block3dSvg.src },
-]
+] as const
+
+export type OmlgBlockNames = (typeof OMLG_BLOCKS)[number]['name']
 
 export const OMLG_PALLETE = [
   {
@@ -107,4 +109,7 @@ export const OMLG_PALLETE = [
     gradient: ['#00ff41', '#008f11'],
     img: MatrixSvg.src,
   },
-]
+] as const
+
+export type OmlgPaletteName = (typeof OMLG_PALLETE)[number]['name']
+export type OmlgPaletteITem = (typeof OMLG_PALLETE)[number]
