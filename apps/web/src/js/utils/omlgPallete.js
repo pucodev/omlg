@@ -28,20 +28,25 @@ import SunsetSvg from '#assets/pallete/omlg-sunset.svg'
 
 export const OMLG_BLOCKS = [
   { name: 'block', img: BlockBlockSvg.src },
-  { name: '3d', img: Block3dSvg.src },
-  { name: 'chrome', img: BlockChromeSvg.src },
-  { name: 'grid', img: BlockGridSvg.src },
-  { name: 'huge', img: BlockHugeSvg.src },
-  { name: 'pallet', img: BlockPalletSvg.src },
-  { name: 'shade', img: BlockShadeSvg.src },
-  { name: 'simple', img: BlockSimpleSvg.src },
-  { name: 'simple3d', img: BlockSimple3dSvg.src },
-  { name: 'simpleBlock', img: BlockSimpleBlockSvg.src },
-  { name: 'slick', img: BlockSlickSvg.src },
   { name: 'tiny', img: BlockTinySvg.src },
+  { name: 'shade', img: BlockShadeSvg.src },
+  { name: 'grid', img: BlockGridSvg.src },
+  { name: 'chrome', img: BlockChromeSvg.src },
+  { name: 'pallet', img: BlockPalletSvg.src },
+  { name: 'huge', img: BlockHugeSvg.src },
+  { name: 'slick', img: BlockSlickSvg.src },
+  { name: 'simple', img: BlockSimpleSvg.src },
+  { name: 'simpleBlock', img: BlockSimpleBlockSvg.src },
+  { name: 'simple3d', img: BlockSimple3dSvg.src },
+  { name: '3d', img: Block3dSvg.src },
 ]
 
 export const OMLG_PALLETE = [
+  {
+    name: 'ocean',
+    gradient: ['#667eea', '#764ba2'],
+    img: OceanSvg.src,
+  },
   {
     name: 'grad-blue',
     gradient: ['#4ea8ff', '#7f88ff'],
@@ -66,11 +71,6 @@ export const OMLG_PALLETE = [
     name: 'mono',
     gradient: ['#f07178', '#f07178'],
     img: MonoSvg.src,
-  },
-  {
-    name: 'ocean',
-    gradient: ['#667eea', '#764ba2'],
-    img: OceanSvg.src,
   },
   {
     name: 'fire',

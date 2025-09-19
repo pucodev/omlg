@@ -13,6 +13,7 @@ export default [
       '@stylistic': stylistic,
     },
     rules: {
+      '@stylistic/multiline-ternary': 'off',
       '@stylistic/space-before-function-paren': [
         'error',
         {

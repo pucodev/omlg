@@ -132,6 +132,13 @@ html {
   width: 50%;
   max-width: 140px;
 }
+
+.card-omlg--block--3d,
+.card-omlg--block--simple3d {
+  width: 100%;
+  max-width: calc(2 * 140px + var(--pui-space-3));
+}
+
 .card-omlg--block__image {
   min-height: 82px;
   display: flex;
@@ -189,6 +196,20 @@ html {
 
 .card-pallete-slider.is-active .pallete-name {
   font-weight: 700;
+}
+
+.omlg-preview {
+  position: relative;
+}
+
+.omlg-preview .loader-content {
+  border-radius: 0.25rem;
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 82, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* PUCOUI */

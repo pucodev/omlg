@@ -16,6 +16,7 @@ export default function Generator() {
   const [filled, setFilled] = useState(true)
   const [reverseGradient, setReverseGradient] = useState(false)
   const [blockFont, setBlockFont] = useState(OMLG_BLOCKS[0].name)
+  const [isLoading, setIsLoading] = useState(false)
 
   const gradientDirectionValues = ['vertical', 'horizontal', 'diagonal']
   const [gradientDirection, setGradientDirection] = useState(
@@ -23,20 +24,33 @@ export default function Generator() {
   )
 
   useEffect(() => {
-    console.log('UPDATE IMAGE')
-  }, [text, letterSpacing, gradientDirection])
+    if (text) {
+      submit()
+    }
+  }, [
+    letterSpacing,
+    gradientDirection,
+    palette,
+    filled,
+    reverseGradient,
+    blockFont,
+  ])
 
   async function submit() {
-    const response = await OmlgService.getSvg({
-      text,
-      palette,
-      filled,
-      letter_spacing: Number(letterSpacing),
-      gradien_direction: gradientDirection,
-      reverse_gradient: reverseGradient,
-      block_font: blockFont,
-    })
-    setSvg(response.data)
+    setIsLoading(true)
+    try {
+      const response = await OmlgService.getSvg({
+        text,
+        palette,
+        filled,
+        letter_spacing: Number(letterSpacing),
+        gradien_direction: gradientDirection,
+        reverse_gradient: reverseGradient,
+        block_font: blockFont,
+      })
+      setSvg(response.data)
+    } catch (error) {}
+    setIsLoading(false)
   }
 
   function selectPalette(palette) {
@@ -81,13 +95,13 @@ export default function Generator() {
                   </div>
 
                   {/* <!-- BLOCK FONT --> */}
-                  <div className="is-flex is-flex-column is-gap-3">
-                    <div className="is-font-bold">Mode:</div>
+                  <div className="is-flex is-flex-column is-gap-3 mt-3">
+                    <div className="is-font-bold">Block font:</div>
                     <div className="is-flex is-flex-wrap is-gap-3">
                       {OMLG_BLOCKS.map((item, index) => (
                         <button
                           key={index}
-                          className={`card is-outlined card-omlg card-omlg--block ${blockFont === item.name ? 'is-active' : ''}`}
+                          className={`card is-outlined card-omlg card-omlg--block card-omlg--block--${item.name} ${blockFont === item.name ? 'is-active' : ''}`}
                           onClick={() => setBlockFont(item.name)}
                         >
                           <div className="card-omlg--block__image">
@@ -126,11 +140,26 @@ export default function Generator() {
                   </button>
 
                   {/* <!-- PREVIEW IMAGE --> */}
-                  <figure className="image w-100 py-6">
-                    <SvgFromApi svgString={svg} />
-                  </figure>
+                  <div class="is-font-bold mt-4">Preview:</div>
+                  <div className="omlg-preview my-5">
+                    <figure className="image w-100 py-4">
+                      {svg ? (
+                        <SvgFromApi svgString={svg} />
+                      ) : (
+                        <img src={SvgLogoFilled.src} />
+                      )}
+                    </figure>
+                    {isLoading ? (
+                      <div className="loader-content">
+                        <div className="loader" />
+                      </div>
+                    ) : (
+                      <></>
+                    )}
+                  </div>
 
                   {/* <!-- DOWNLOAD --> */}
+                  <div class="is-font-bold mb-1">Download:</div>
                   <div className="is-hstack">
                     <button className="btn w-100 is-outlined">SVG</button>
                     <button className="btn w-100 is-outlined">PNG</button>

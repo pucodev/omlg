@@ -9,7 +9,7 @@ export default function Slider({ onSelectPalette }) {
   const sliderRef = useRef(null)
   const glideRef = useRef(null)
   const items = OMLG_PALLETE
-  const [selectedItem, setSelectedItem] = useState(1)
+  const [selectedItem, setSelectedItem] = useState(0)
   console.log('RENDER SLIDER')
 
   function selectTheme(index) {
