@@ -58,14 +58,6 @@ html {
   inset: 0;
   position: absolute;
 
-  /* background-image: */
-  /*   radial-gradient( */
-  /*     circle at top right, */
-  /*     rgba(0, 187, 249, 0.3), */
-  /*     transparent 45% */
-  /*   ), */
-  /*   radial-gradient(circle at 0% 60%, rgba(0, 187, 249, 0.2), transparent 35%); */
-
   background-image:
     radial-gradient(
       circle at top right,
@@ -77,20 +69,6 @@ html {
       rgba(var(--color-gradient), 0.2),
       transparent 35%
     );
-
-  /* background-image: */
-  /*   radial-gradient( */
-  /*     circle at top right, */
-  /*     rgba(135, 96, 219, 0.3), */
-  /*     transparent 45% */
-  /*   ), */
-  /*   radial-gradient(circle at 0% 60%, rgba(135, 96, 219, 0.2), transparent 35%); */
-
-  /* background-image: radial-gradient( */
-  /*   circle at top center, */
-  /*   rgba(135, 96, 219, 0.3), */
-  /*   transparent 70% */
-  /* ); */
 }
 
 .hero-title {
@@ -206,7 +184,7 @@ html {
   border-radius: 0.25rem;
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 82, 0.3);
+  background-color: rgba(0, 0, 82, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;

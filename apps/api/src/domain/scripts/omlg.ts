@@ -3,7 +3,7 @@ import { spawn } from 'child_process'
 import { applog } from '#utils/logger'
 import { sanitizeAndMakeResponsiveSvg } from '#utils/sanitize-svg'
 
-const palletes = [
+export const OMLG_PALETTES = [
   {
     name: 'grad-blue',
     gradient: ['#4ea8ff', '#7f88ff'],
@@ -56,7 +56,9 @@ const palletes = [
     name: 'matrix',
     gradient: ['#00ff41', '#008f11'],
   },
-]
+] as const
+
+export type OmlgPaletteNames = (typeof OMLG_PALETTES)[number]['name']
 
 export interface OmlOptions {
   filled?: boolean
@@ -66,9 +68,25 @@ export interface OmlOptions {
   reverseGradient?: boolean
 }
 
-export async function generateSvg(
+/**
+ * Asynchronously generates an SVG graphic from text using the `oh-my-logo` and `ansisvg` command-line tools.
+ *
+ * @remarks
+ * This function orchestrates the use of external command-line tools:
+ * - `oh-my-logo`: Generates ASCII art or text effects based on the input text and styling options, outputting ANSI escape codes.
+ * - `ansisvg`: Converts the ANSI escape code output from `oh-my-logo` into an SVG image.
+ * The process involves spawning a child `bash` process to execute these commands in a pipeline.
+ *
+ * @param text - The input string to be rendered into an SVG.
+ * @param palette - The name of the color palette to apply to the text. This is passed directly to `oh-my-logo`.
+ * @param options - An object containing various rendering options for `oh-my-logo`.
+ * @returns A Promise that resolves with the generated, sanitized, and responsive SVG string.
+ *
+ * @throws If an error occurs during the child process execution and data is written to stderr.
+ * @throws If the child process exits with a non-zero status code, indicating a failure.
+ */ export async function generateSvg(
   text: string,
-  palette: string,
+  palette: OmlgPaletteNames,
   options: OmlOptions,
 ) {
   return new Promise((resolve, reject) => {

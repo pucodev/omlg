@@ -8,7 +8,9 @@
   ],
   "scripts": {
     "api:dev": "pnpm --filter @omlg/api dev",
-    "web:dev": "pnpm --filter @omlg/web dev"
+    "lint": "eslint .",
+    "web:dev": "pnpm --filter @omlg/web dev",
+    "web:lint": "pnpm --filter @omlg/web lint"
   },
   "lint-staged": {
     "*.{js,ts,json,css,md,scss}": "prettier --write",
@@ -21,7 +23,7 @@
     "@tsconfig/node22": "^22.0.2",
     "@types/node": "^24.2.1",
     "eslint": "^9.15.0",
-    "eslint-plugin-jsdoc": "^50.4.3",
+    "eslint-plugin-tsdoc": "^0.4.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.1.5",
     "neostandard": "^0.11.7",

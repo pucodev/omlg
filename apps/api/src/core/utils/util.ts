@@ -6,8 +6,8 @@ import { applog } from './logger.ts'
 /**
  * Sends an error response using FastifyReply.
  *
- * @param reply The FastifyReply object to send the response.
- * @param error The error object to be sent in the response. If it's an ApiError, the statusCode and payload are used. Otherwise, a generic 500 error is sent.
+ * @param reply - The FastifyReply object to send the response.
+ * @param error - The error object to be sent in the response. If it's an ApiError, the statusCode and payload are used. Otherwise, a generic 500 error is sent.
  */
 export function replyError(reply: FastifyReply, error: unknown) {
   applog.errorApi(error)

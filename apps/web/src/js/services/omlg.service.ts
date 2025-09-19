@@ -3,9 +3,11 @@ import { urls } from '#api/urls.ts'
 
 import MainService, { type BaseResponse } from './main.service.ts'
 
+export type GradientDirection = 'vertical' | 'horizontal' | 'diagonal'
+
 export interface OmlgParams {
   filled?: boolean
-  gradien_direction?: 'vertical' | 'horizontal' | 'diagonal'
+  gradien_direction?: GradientDirection
   block_font?: string
   letter_spacing?: number
   reverse_gradient?: boolean

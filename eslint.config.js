@@ -1,16 +1,18 @@
 import stylistic from '@stylistic/eslint-plugin'
-import jsdoc from 'eslint-plugin-jsdoc'
+import tsdoc from 'eslint-plugin-tsdoc'
 import neostandard from 'neostandard'
 
 export default [
+  {
+    ignores: ['**/.astro/**', '**/dist/**'],
+  },
   ...neostandard({
     ts: true,
   }),
-  jsdoc.configs['flat/recommended'],
-  jsdoc.configs['flat/recommended-typescript'],
   {
     plugins: {
       '@stylistic': stylistic,
+      tsdoc,
     },
     rules: {
       '@stylistic/multiline-ternary': 'off',
@@ -34,7 +36,8 @@ export default [
         },
       ],
       '@stylistic/jsx-quotes': ['error', 'prefer-double'],
-      'jsdoc/tag-lines': ['warn', 'any', { startLines: 1 }],
+      '@stylistic/jsx-curly-newline': 'off',
+      'tsdoc/syntax': 'warn',
     },
   },
 ]

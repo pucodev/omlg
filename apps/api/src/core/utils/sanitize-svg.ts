@@ -8,7 +8,7 @@ export interface SanitizeOptions {
   /**
    * Base font size in pixels, used to convert `em` units.
    *
-   * @default 14
+   * @defaultValue 14
    */
   fontSizePx?: number
 
@@ -16,7 +16,7 @@ export interface SanitizeOptions {
    * Average character width in pixels (`ch` unit), used to convert `ch` units.
    * For monospace fonts like Courier at 14px, 8px is a good approximation.
    *
-   * @default 8
+   * @defaultValue 8
    */
   chWidthPx?: number
 }

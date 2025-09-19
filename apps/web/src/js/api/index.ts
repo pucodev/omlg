@@ -25,16 +25,23 @@ export function isApiError(error: unknown): error is ApiError {
   )
 }
 
+// prettier-ignore
+interface RequestGeneric<
+  TResponse = unknown,
+  TError extends BaseError = BaseError,
+  TData = unknown
+> {
+  response: TResponse
+  data: TData
+  error: TError
+}
+
 const Api = {
-  async request<
-    TResponse = unknown,
-    TData = unknown,
-    TError extends BaseError = BaseError,
-  >(
+  async request<T extends RequestGeneric>(
     method: HttpMethod,
     url: string,
-    data?: TData,
-  ): Promise<AxiosResponse<TResponse>> {
+    data?: T['data'],
+  ): Promise<AxiosResponse<T['response']>> {
     const request: AxiosRequestConfig = {
       method,
       url,
@@ -49,10 +56,10 @@ const Api = {
     }
 
     try {
-      const response = await axios<TResponse>(request)
+      const response = await axios<T['response']>(request)
       return response
     } catch (err) {
-      if (axios.isAxiosError<TError>(err)) {
+      if (axios.isAxiosError<T['error']>(err)) {
         // Validate error
       }
 

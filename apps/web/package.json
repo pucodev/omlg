@@ -12,6 +12,7 @@
     "astro": "astro",
     "build": "astro build",
     "dev": "astro dev",
+    "lint": "eslint .",
     "prepare": "husky",
     "preview": "astro preview"
   },
@@ -22,5 +23,8 @@
     "axios": "^1.12.2",
     "isomorphic-dompurify": "^2.28.0",
     "preact": "^10.27.2"
+  },
+  "devDependencies": {
+    "@types/glidejs__glide": "^3.6.6"
   }
 }
