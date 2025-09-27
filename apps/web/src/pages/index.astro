@@ -81,17 +81,17 @@ const supportCards = [
             <Logo style="max-width: 140px" />
 
             <div class="is-hstack">
-              <button class="btn is-outlined">
+              <a href="https://github.com/pucodev/omlg" target="_blank" class="btn is-outlined">
                 <iconify-icon class="icon" icon="cib:github"></iconify-icon>
                 <span>Github</span>
-              </button>
-              <button class="btn is-outlined">
+              </a>
+              <a href="https://github.com/pucodev/omlg" target="_blank" class="btn is-outlined">
                 <iconify-icon
                   class="icon"
                   icon="solar:star-bold-duotone"
                 ></iconify-icon>
                 <span>Star</span>
-              </button>
+              </a>
             </div>
           </div>
         </header>
@@ -107,20 +107,22 @@ const supportCards = [
               Image
             </h1>
             <div class="is-hstack">
-              <button class="btn is-md">Get Started</button>
-              <button class="btn is-outlined is-md">
+              <button class="btn is-md" id="gotoGenerator">Get Started</button>
+              <a href="https://github.com/pucodev/omlg" target="_blank" class="btn is-outlined is-md">
                 <iconify-icon
                   class="icon"
                   icon="solar:star-bold-duotone"
                 ></iconify-icon>
                 <span>Star</span>
-              </button>
+              </a>
             </div>
           </div>
         </section>
 
         <!-- GENERATOR -->
-        <Generator client:load />
+        <div id="generator">
+          <Generator client:load/>
+        </div>
 
         <!-- SUPPORT -->
         <div class="container">
@@ -174,6 +176,20 @@ const supportCards = [
     </div>
 
     <div class="py-8 mt-4"></div>
+
+    <script>
+      document.getElementById('gotoGenerator').addEventListener('click', function () {
+        const target = document.getElementById('generator');
+        const offset = 40;
+        const elementPosition = target.getBoundingClientRect().top + window.scrollY;
+        const offsetPosition = elementPosition - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      });
+    </script>
   </body>
 </html>
 
