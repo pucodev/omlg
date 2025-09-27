@@ -60,6 +60,21 @@ export default function Slider({ onSelectPalette }: SliderProps) {
         rewind: false,
         startAt: 0,
         perView: 5.5,
+        breakpoints: {
+          1024: {
+            perView: 3.5,
+          },
+          600: {
+            perView: 2.5,
+          },
+          400: {
+            perView: 1.5,
+          },
+        },
+      })
+
+      glideRef.current.on('mount.after', () => {
+        document.querySelector('.glide--palette')?.classList.add('is-ready')
       })
 
       glideRef.current.mount()
@@ -75,7 +90,7 @@ export default function Slider({ onSelectPalette }: SliderProps) {
         <iconify-icon class="icon" icon="solar:alt-arrow-left-outline" />
       </button>
 
-      <div className="glide slider-content" ref={sliderRef}>
+      <div className="glide slider-content glide--palette" ref={sliderRef}>
         <div className="glide__track" data-glide-el="track">
           <ul className="glide__slides">
             {items.map((item, index) => (

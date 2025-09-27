@@ -8,6 +8,32 @@ import '../../node_modules/@glidejs/glide/dist/css/glide.theme.css'
 import Logo from '../components/astro/Logo.astro'
 import Generator from '../components/react/Generator.jsx'
 import Slider from '../components/react/generator/Slider.jsx'
+
+const GTM_ID = import.meta.env.GTM_ID
+
+const supportCards = [
+  {
+    icon: "solar:rocket-outline",
+    title: "Give Credit to Oh My Logo",
+    body: "OMLG is powered by the open-source library Oh My Logo. Show appreciation to its creator by giving a ⭐ on GitHub and help more developers discover this amazing project",
+    cta: "Oh My Logo Github",
+    href: "https://github.com/shinshin86/oh-my-logo",
+  },
+  {
+    icon: "solar:tea-cup-outline",
+    title: "Buy Us a Coffee",
+    body: "By supporting us on Buy Me a Coffee, you help us build new features, and create even more personalized design experiences",
+    cta: "Support on Buy Me a Coffee",
+    href: "#",
+  },
+  {
+    icon: "solar:posts-carousel-vertical-line-duotone",
+    title: "Use It & Contribute",
+    body: "Integrate OMLG into your own projects and share your experience with the community. If you’re already using it, open a Pull Request to add your project to our GitHub README and showcase how you’re generating logos",
+    cta: "Contribute on GitHub",
+    href: "#",
+  }
+]
 ---
 <html lang="en">
   <head>
@@ -23,8 +49,29 @@ import Slider from '../components/react/generator/Slider.jsx'
       href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+
+    <!-- GTM -->
+    {GTM_ID && (
+      <script is:inline define:vars={{GTM_ID}}>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer',GTM_ID);</script>
+    )}
   </head>
   <body class="is-ocean">
+    <!-- GTM -->
+    {GTM_ID && (
+      <noscript>
+        <iframe
+          src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
+          height="0"
+          width="0"
+          style="display: none; visibility: hidden"
+        >
+        </iframe>
+      </noscript>
+    )}
     <div class="is-relative">
       <div class="bg-gradient"></div>
       <div class="bg-gradient-square"></div>
@@ -74,6 +121,55 @@ import Slider from '../components/react/generator/Slider.jsx'
 
         <!-- GENERATOR -->
         <Generator client:load />
+
+        <!-- SUPPORT -->
+        <div class="container">
+          <div
+            class="is-vstack is-gap-0 is-text-center mx-auto py-8"
+            style={{ maxWidth: '720px' }}
+          >
+            <div
+              class="surface is-primary is-tone-1 is-rounded is-center"
+              style={{ width: '64px', height: '64px' }}
+            >
+              <iconify-icon class="icon icon-section is-color-primary mt-1" icon="solar:hand-stars-linear"></iconify-icon>
+            </div>
+            <h5 class="is-color-primary mt-3">
+              JOIN THE OMLG COMMUNITY
+            </h5>
+            <h2>
+              Support the Growth of Oh My Logo Generator
+            </h2>
+            <div class="is-text-muted mt-3">
+              Your contribution helps us improve features, give visibility to open-source projects, and keep OMLG accessible for creators worldwide
+            </div>
+          </div>
+
+          <div class="is-row is-gap-4 is-align-items-stretch">
+            {supportCards.map(v => (
+            <div class="is-col-12 md:is-col-4 is-flex is-flex-grow-1">
+              <div class="card is-flex is-flex-grow-1">
+                <div class="card-body is-text-center is-flex is-flex-grow-1">
+                  <div class="is-vstack mb-4">
+                    <div
+                      class="surface is-tone-1 is-rounded is-center"
+                      style={{ width: '80px', height: '80px' }}
+                    >
+                      <iconify-icon class="icon icon-section is-color-primary mt-1" icon={v.icon}></iconify-icon>
+                    </div>
+                  </div>
+                  <div class="card-title h5">{v.title}</div>
+                  <div class="card-content mt-3 is-flex-grow-1">
+                    {v.body}
+                  </div>
+
+                  <a href={v.href} target="_blank" class="btn w-100 mt-6">{v.cta}</a>
+                </div>
+              </div>
+            </div>
+            ))}
+          </div>
+        </div>
       </div>
     </div>
 

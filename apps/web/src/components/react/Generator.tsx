@@ -90,12 +90,15 @@ export default function Generator() {
           <div className="card-body">
             {/* <!-- PALLETE SLIDER --> */}
             <div className="pb-5">
+              <div className="is-text-center is-font-bold mb-3">
+                Choose your palette
+              </div>
               <Slider onSelectPalette={selectPalette} />
             </div>
 
             {/* <!-- CARD OPTIONS --> */}
             <div className="generator-container">
-              <div className="card is-outlined generator__mode">
+              <div className="card is-outlined generator__mode section--mode">
                 <div className="card-body">
                   {/* <!-- MODE --> */}
                   <div className="is-flex is-flex-column is-gap-3">
@@ -123,7 +126,10 @@ export default function Generator() {
                   {/* <!-- BLOCK FONT --> */}
                   <div className="is-flex is-flex-column is-gap-3 mt-3">
                     <div className="is-font-bold">Block font:</div>
-                    <div className="is-flex is-flex-wrap is-gap-3">
+                    <div
+                      className="is-flex is-flex-wrap is-gap-3"
+                      style={{ overflowY: 'auto', maxHeight: '340px' }}
+                    >
                       {OMLG_BLOCKS.map((item, index) => (
                         <button
                           key={index}
@@ -146,7 +152,7 @@ export default function Generator() {
                 </div>
               </div>
               {/* <!-- PREVIEW --> */}
-              <div className="card is-outlined generator__preview">
+              <div className="card is-outlined generator__preview is-col-6 section--preview">
                 <div className="card-body">
                   <div className="field">
                     <label for="omlg-text" className="label">
@@ -168,11 +174,15 @@ export default function Generator() {
                   {/* <!-- PREVIEW IMAGE --> */}
                   <div class="is-font-bold mt-4">Preview:</div>
                   <div className="omlg-preview my-5">
-                    <figure className="image w-100 py-4">
+                    <figure className="image w-100 py-4 px-3">
                       {svg ? (
                         <SvgFromApi svgString={svg} />
                       ) : (
-                        <img src={SvgLogoFilled.src} />
+                        <img
+                          className="py-3"
+                          src={SvgLogoFilled.src}
+                          style={{ opacity: 0.2 }}
+                        />
                       )}
                     </figure>
                     {isLoading ? (
@@ -196,7 +206,7 @@ export default function Generator() {
                 </div>
               </div>
               {/* <!-- OTHER OPTIONS --> */}
-              <div className="card is-outlined generator__other-options">
+              <div className="card is-outlined generator__other-options section--options">
                 <div className="card-body">
                   <div className="card-title">Other options</div>
 

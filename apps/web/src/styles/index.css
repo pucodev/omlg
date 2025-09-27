@@ -1,6 +1,7 @@
 html {
   font-family: 'Lato', sans-serif;
   font-style: normal;
+  line-height: 1.5;
 }
 
 .is-sunset {
@@ -157,6 +158,17 @@ html {
   .generator__preview {
     order: initial;
   }
+  .generator-container .section--mode {
+    width: 33.33%;
+  }
+
+  .generator-container .section--preview {
+    width: 41.67%;
+  }
+
+  .generator-container .section--options {
+    width: 25%;
+  }
 }
 
 .btn-slider {
@@ -178,10 +190,12 @@ html {
 
 .omlg-preview {
   position: relative;
+  background-color: #eff1f5;
+  border-radius: 0.4rem;
 }
 
 .omlg-preview .loader-content {
-  border-radius: 0.25rem;
+  border-radius: 0.4rem;
   position: absolute;
   inset: 0;
   background-color: rgba(0, 0, 82, 0.5);
@@ -190,7 +204,25 @@ html {
   justify-content: center;
 }
 
+.glide--palette {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  max-height: 80px;
+}
+
+.glide--palette.is-ready {
+  opacity: 1;
+  max-height: unset;
+}
+
+.icon-section {
+  --pui-icon-size: 32px;
+}
+
 /* PUCOUI */
+.image img {
+  height: auto;
+}
 .btn .icon:first-child:not(:last-child),
 .btn .badge:first-child:not(:last-child) {
   margin-inline: 0 var(--pui-space-1);
@@ -200,6 +232,24 @@ html {
   margin-inline: var(--pui-space-1) 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  line-height: 1.25;
+}
+
+a.btn {
+  text-decoration: none;
+}
 /* ADD TO PUCOUI */
 /* .is-row { */
 /*   --pui-gap: var(--pui-space-0); */
