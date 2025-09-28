@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="342.83" height="83.891" version="1.1" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        * {
+            font-family: Courier, monospace;
+            font-size: 14px;
+        }
+        tspan, text {
+            font-variant-ligatures: none;
+            dominant-baseline: central;
+            white-space: pre;
+            fill: #bbbbbb;
+        }
+        .bg {
+            stroke-width: "0.5px";
+        }
+        
+        .fc0 { fill: #00c6ff; }
+        .fc1 { fill: #00c4ff; }
+        .fc2 { fill: #00c2ff; }
+        .fc3 { fill: #00c0ff; }
+        .fc4 { fill: #00beff; }
+        .fc5 { fill: #00bcff; }
+        .fc6 { fill: #00b9ff; }
+        .fc7 { fill: #00b7ff; }
+        .fc8 { fill: #00b5ff; }
+        .fc9 { fill: #00b3ff; }
+        .fc10 { fill: #00b1ff; }
+        .fc11 { fill: #00afff; }
+        .fc12 { fill: #00adff; }
+        .fc13 { fill: #00abff; }
+        .fc14 { fill: #00a9ff; }
+        .fc15 { fill: #00a7ff; }
+        .fc16 { fill: #00a4ff; }
+        .fc17 { fill: #00a2ff; }
+        .fc18 { fill: #00a0ff; }
+        .fc19 { fill: #009eff; }
+        .fc20 { fill: #009cff; }
+        .fc21 { fill: #009aff; }
+        .fc22 { fill: #0098ff; }
+        .fc23 { fill: #0096ff; }
+        .fc24 { fill: #0094ff; }
+        .fc25 { fill: #0092ff; }
+        .fc26 { fill: #008fff; }
+        .fc27 { fill: #008dff; }
+        .fc28 { fill: #008bff; }
+        .fc29 { fill: #0089ff; }
+        .fc30 { fill: #0087ff; }
+        .fc31 { fill: #0085ff; }
+        .fc32 { fill: #0083ff; }
+        .fc33 { fill: #0081ff; }
+        .fc34 { fill: #007fff; }
+        .fc35 { fill: #007dff; }
+        .fc36 { fill: #007aff; }
+        .fc37 { fill: #0078ff; }
+        .fc38 { fill: #0076ff; }
+        .fc39 { fill: #0074ff; }
+        .fc40 { fill: #0072ff; }
+    </style>
+<text y="9.4951172"><tspan class="fc0"> </tspan><tspan class="fc1"> </tspan><tspan class="fc2">█</tspan><tspan class="fc3">█</tspan><tspan class="fc4">█</tspan><tspan class="fc5">█</tspan><tspan class="fc6">█</tspan><tspan class="fc7">█</tspan><tspan class="fc8">╗</tspan><tspan class="fc9"> </tspan><tspan class="fc10"> </tspan><tspan class="fc11">█</tspan><tspan class="fc12">█</tspan><tspan class="fc13">█</tspan><tspan class="fc14">╗</tspan><tspan class="fc15"> </tspan><tspan class="fc16"> </tspan><tspan class="fc17"> </tspan><tspan class="fc18">█</tspan><tspan class="fc19">█</tspan><tspan class="fc20">█</tspan><tspan class="fc21">╗</tspan><tspan class="fc22"> </tspan><tspan class="fc23">█</tspan><tspan class="fc24">█</tspan><tspan class="fc25">╗</tspan><tspan class="fc26"> </tspan><tspan class="fc27"> </tspan><tspan class="fc28"> </tspan><tspan class="fc29"> </tspan><tspan class="fc30"> </tspan><tspan class="fc31"> </tspan><tspan class="fc32"> </tspan><tspan class="fc33">█</tspan><tspan class="fc34">█</tspan><tspan class="fc35">█</tspan><tspan class="fc36">█</tspan><tspan class="fc37">█</tspan><tspan class="fc38">█</tspan><tspan class="fc39">╗</tspan></text>
+<text y="23.495117"><tspan class="fc0"> </tspan><tspan class="fc1">█</tspan><tspan class="fc2">█</tspan><tspan class="fc3">╔</tspan><tspan class="fc4">═</tspan><tspan class="fc5">═</tspan><tspan class="fc6">═</tspan><tspan class="fc7">█</tspan><tspan class="fc8">█</tspan><tspan class="fc9">╗</tspan><tspan class="fc10"> </tspan><tspan class="fc11">█</tspan><tspan class="fc12">█</tspan><tspan class="fc13">█</tspan><tspan class="fc14">█</tspan><tspan class="fc15">╗</tspan><tspan class="fc16"> </tspan><tspan class="fc17">█</tspan><tspan class="fc18">█</tspan><tspan class="fc19">█</tspan><tspan class="fc20">█</tspan><tspan class="fc21">║</tspan><tspan class="fc22"> </tspan><tspan class="fc23">█</tspan><tspan class="fc24">█</tspan><tspan class="fc25">║</tspan><tspan class="fc26"> </tspan><tspan class="fc27"> </tspan><tspan class="fc28"> </tspan><tspan class="fc29"> </tspan><tspan class="fc30"> </tspan><tspan class="fc31"> </tspan><tspan class="fc32">█</tspan><tspan class="fc33">█</tspan><tspan class="fc34">╔</tspan><tspan class="fc35">═</tspan><tspan class="fc36">═</tspan><tspan class="fc37">═</tspan><tspan class="fc38">═</tspan><tspan class="fc39">╝</tspan></text>
+<text y="37.495117"><tspan class="fc0"> </tspan><tspan class="fc1">█</tspan><tspan class="fc2">█</tspan><tspan class="fc3">║</tspan><tspan class="fc4"> </tspan><tspan class="fc5"> </tspan><tspan class="fc6"> </tspan><tspan class="fc7">█</tspan><tspan class="fc8">█</tspan><tspan class="fc9">║</tspan><tspan class="fc10"> </tspan><tspan class="fc11">█</tspan><tspan class="fc12">█</tspan><tspan class="fc13">╔</tspan><tspan class="fc14">█</tspan><tspan class="fc15">█</tspan><tspan class="fc16">█</tspan><tspan class="fc17">█</tspan><tspan class="fc18">╔</tspan><tspan class="fc19">█</tspan><tspan class="fc20">█</tspan><tspan class="fc21">║</tspan><tspan class="fc22"> </tspan><tspan class="fc23">█</tspan><tspan class="fc24">█</tspan><tspan class="fc25">║</tspan><tspan class="fc26"> </tspan><tspan class="fc27"> </tspan><tspan class="fc28"> </tspan><tspan class="fc29"> </tspan><tspan class="fc30"> </tspan><tspan class="fc31"> </tspan><tspan class="fc32">█</tspan><tspan class="fc33">█</tspan><tspan class="fc34">║</tspan><tspan class="fc35"> </tspan><tspan class="fc36"> </tspan><tspan class="fc37">█</tspan><tspan class="fc38">█</tspan><tspan class="fc39">█</tspan><tspan class="fc40">╗</tspan></text>
+<text y="51.495117"><tspan class="fc0"> </tspan><tspan class="fc1">█</tspan><tspan class="fc2">█</tspan><tspan class="fc3">║</tspan><tspan class="fc4"> </tspan><tspan class="fc5"> </tspan><tspan class="fc6"> </tspan><tspan class="fc7">█</tspan><tspan class="fc8">█</tspan><tspan class="fc9">║</tspan><tspan class="fc10"> </tspan><tspan class="fc11">█</tspan><tspan class="fc12">█</tspan><tspan class="fc13">║</tspan><tspan class="fc14">╚</tspan><tspan class="fc15">█</tspan><tspan class="fc16">█</tspan><tspan class="fc17">╔</tspan><tspan class="fc18">╝</tspan><tspan class="fc19">█</tspan><tspan class="fc20">█</tspan><tspan class="fc21">║</tspan><tspan class="fc22"> </tspan><tspan class="fc23">█</tspan><tspan class="fc24">█</tspan><tspan class="fc25">║</tspan><tspan class="fc26"> </tspan><tspan class="fc27"> </tspan><tspan class="fc28"> </tspan><tspan class="fc29"> </tspan><tspan class="fc30"> </tspan><tspan class="fc31"> </tspan><tspan class="fc32">█</tspan><tspan class="fc33">█</tspan><tspan class="fc34">║</tspan><tspan class="fc35"> </tspan><tspan class="fc36"> </tspan><tspan class="fc37"> </tspan><tspan class="fc38">█</tspan><tspan class="fc39">█</tspan><tspan class="fc40">║</tspan></text>
+<text y="65.495117"><tspan class="fc0"> </tspan><tspan class="fc1">╚</tspan><tspan class="fc2">█</tspan><tspan class="fc3">█</tspan><tspan class="fc4">█</tspan><tspan class="fc5">█</tspan><tspan class="fc6">█</tspan><tspan class="fc7">█</tspan><tspan class="fc8">╔</tspan><tspan class="fc9">╝</tspan><tspan class="fc10"> </tspan><tspan class="fc11">█</tspan><tspan class="fc12">█</tspan><tspan class="fc13">║</tspan><tspan class="fc14"> </tspan><tspan class="fc15">╚</tspan><tspan class="fc16">═</tspan><tspan class="fc17">╝</tspan><tspan class="fc18"> </tspan><tspan class="fc19">█</tspan><tspan class="fc20">█</tspan><tspan class="fc21">║</tspan><tspan class="fc22"> </tspan><tspan class="fc23">█</tspan><tspan class="fc24">█</tspan><tspan class="fc25">█</tspan><tspan class="fc26">█</tspan><tspan class="fc27">█</tspan><tspan class="fc28">█</tspan><tspan class="fc29">█</tspan><tspan class="fc30">╗</tspan><tspan class="fc31"> </tspan><tspan class="fc32">╚</tspan><tspan class="fc33">█</tspan><tspan class="fc34">█</tspan><tspan class="fc35">█</tspan><tspan class="fc36">█</tspan><tspan class="fc37">█</tspan><tspan class="fc38">█</tspan><tspan class="fc39">╔</tspan><tspan class="fc40">╝</tspan></text>
+<text y="79.495117"><tspan class="fc0"> </tspan><tspan class="fc1"> </tspan><tspan class="fc2">╚</tspan><tspan class="fc3">═</tspan><tspan class="fc4">═</tspan><tspan class="fc5">═</tspan><tspan class="fc6">═</tspan><tspan class="fc7">═</tspan><tspan class="fc8">╝</tspan><tspan class="fc9"> </tspan><tspan class="fc10"> </tspan><tspan class="fc11">╚</tspan><tspan class="fc12">═</tspan><tspan class="fc13">╝</tspan><tspan class="fc14"> </tspan><tspan class="fc15"> </tspan><tspan class="fc16"> </tspan><tspan class="fc17"> </tspan><tspan class="fc18"> </tspan><tspan class="fc19">╚</tspan><tspan class="fc20">═</tspan><tspan class="fc21">╝</tspan><tspan class="fc22"> </tspan><tspan class="fc23">╚</tspan><tspan class="fc24">═</tspan><tspan class="fc25">═</tspan><tspan class="fc26">═</tspan><tspan class="fc27">═</tspan><tspan class="fc28">═</tspan><tspan class="fc29">═</tspan><tspan class="fc30">╝</tspan><tspan class="fc31"> </tspan><tspan class="fc32"> </tspan><tspan class="fc33">╚</tspan><tspan class="fc34">═</tspan><tspan class="fc35">═</tspan><tspan class="fc36">═</tspan><tspan class="fc37">═</tspan><tspan class="fc38">═</tspan><tspan class="fc39">╝</tspan></text>
+</svg>

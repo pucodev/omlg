@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="212.49" height="43.75" version="1.1" viewBox="0 0 212.49 43.75" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        * {
+            font-family: Courier, monospace;
+            font-size: 14px;
+        }
+        tspan, text {
+            font-variant-ligatures: none;
+            dominant-baseline: central;
+            white-space: pre;
+            fill: #bbbbbb;
+        }
+        .bg {
+            stroke-width: "0.5px";
+        }
+
+        .fc0 { fill: #667eea; }
+        .fc1 { fill: #677ce7; }
+        .fc2 { fill: #677ae4; }
+        .fc3 { fill: #6878e2; }
+        .fc4 { fill: #6876df; }
+        .fc5 { fill: #6974dc; }
+        .fc6 { fill: #6a72d9; }
+        .fc7 { fill: #6a70d7; }
+        .fc8 { fill: #6b6ed4; }
+        .fc9 { fill: #6c6cd1; }
+        .fc10 { fill: #6c6ace; }
+        .fc11 { fill: #6d68cc; }
+        .fc12 { fill: #6d66c9; }
+        .fc13 { fill: #6e65c6; }
+        .fc14 { fill: #6f63c3; }
+        .fc15 { fill: #6f61c0; }
+        .fc16 { fill: #705fbe; }
+        .fc17 { fill: #705dbb; }
+        .fc18 { fill: #715bb8; }
+        .fc19 { fill: #7259b5; }
+        .fc20 { fill: #7257b3; }
+        .fc21 { fill: #7355b0; }
+        .fc22 { fill: #7453ad; }
+        .fc23 { fill: #7451aa; }
+        .fc24 { fill: #754fa8; }
+        .fc25 { fill: #754da5; }
+        .fc26 { fill: #764ba2; }
+    </style>
+<text y="-4.3959999"><tspan class="fc0" x="0"> </tspan><tspan class="fc1" x="8"> </tspan><tspan class="fc2" x="16">_</tspan><tspan class="fc3" x="24">_</tspan><tspan class="fc4" x="32">_</tspan><tspan class="fc5" x="40"> </tspan><tspan class="fc6" x="48"> </tspan><tspan class="fc7" x="56"> </tspan><tspan class="fc8" x="64">_</tspan><tspan class="fc9" x="72"> </tspan><tspan class="fc10" x="80"> </tspan><tspan class="fc11" x="88"> </tspan><tspan class="fc12" x="96"> </tspan><tspan class="fc13" x="104">_</tspan><tspan class="fc14" x="112"> </tspan><tspan class="fc15" x="120"> </tspan><tspan class="fc16" x="128">_</tspan><tspan class="fc17" x="136"> </tspan><tspan class="fc18" x="144"> </tspan><tspan class="fc19" x="152"> </tspan><tspan class="fc20" x="160"> </tspan><tspan class="fc21" x="168"> </tspan><tspan class="fc22" x="176"> </tspan><tspan class="fc23" x="184">_</tspan><tspan class="fc24" x="192">_</tspan><tspan class="fc25" x="200">_</tspan></text>
+<text y="9.6040001"><tspan class="fc0" x="0"> </tspan><tspan class="fc1" x="8">/</tspan><tspan class="fc2" x="16"> </tspan><tspan class="fc3" x="24">_</tspan><tspan class="fc4" x="32"> </tspan><tspan class="fc5" x="40">\</tspan><tspan class="fc6" x="48"> </tspan><tspan class="fc7" x="56">|</tspan><tspan class="fc8" x="64"> </tspan><tspan class="fc9" x="72">\</tspan><tspan class="fc10" x="80"> </tspan><tspan class="fc11" x="88"> </tspan><tspan class="fc12" x="96">/</tspan><tspan class="fc13" x="104"> </tspan><tspan class="fc14" x="112">|</tspan><tspan class="fc15" x="120">|</tspan><tspan class="fc16" x="128"> </tspan><tspan class="fc17" x="136">|</tspan><tspan class="fc18" x="144"> </tspan><tspan class="fc19" x="152"> </tspan><tspan class="fc20" x="160"> </tspan><tspan class="fc21" x="168"> </tspan><tspan class="fc22" x="176">/</tspan><tspan class="fc23" x="184"> </tspan><tspan class="fc24" x="192">_</tspan><tspan class="fc25" x="200">_</tspan><tspan class="fc26" x="208">|</tspan></text>
+<text y="23.604"><tspan class="fc0" x="0">|</tspan><tspan class="fc1" x="8"> </tspan><tspan class="fc2" x="16">(</tspan><tspan class="fc3" x="24">_</tspan><tspan class="fc4" x="32">)</tspan><tspan class="fc5" x="40"> </tspan><tspan class="fc6" x="48">|</tspan><tspan class="fc7" x="56">|</tspan><tspan class="fc8" x="64"> </tspan><tspan class="fc9" x="72">|</tspan><tspan class="fc10" x="80">\</tspan><tspan class="fc11" x="88">/</tspan><tspan class="fc12" x="96">|</tspan><tspan class="fc13" x="104"> </tspan><tspan class="fc14" x="112">|</tspan><tspan class="fc15" x="120">|</tspan><tspan class="fc16" x="128"> </tspan><tspan class="fc17" x="136">|</tspan><tspan class="fc18" x="144">_</tspan><tspan class="fc19" x="152">_</tspan><tspan class="fc20" x="160"> </tspan><tspan class="fc21" x="168">|</tspan><tspan class="fc22" x="176"> </tspan><tspan class="fc23" x="184">(</tspan><tspan class="fc24" x="192">_</tspan><tspan class="fc25" x="200"> </tspan><tspan class="fc26" x="208">|</tspan></text>
+<text y="37.604"><tspan class="fc0" x="0"> </tspan><tspan class="fc1" x="8">\</tspan><tspan class="fc2" x="16">_</tspan><tspan class="fc3" x="24">_</tspan><tspan class="fc4" x="32">_</tspan><tspan class="fc5" x="40">/</tspan><tspan class="fc6" x="48"> </tspan><tspan class="fc7" x="56">|</tspan><tspan class="fc8" x="64">_</tspan><tspan class="fc9" x="72">|</tspan><tspan class="fc10" x="80"> </tspan><tspan class="fc11" x="88"> </tspan><tspan class="fc12" x="96">|</tspan><tspan class="fc13" x="104">_</tspan><tspan class="fc14" x="112">|</tspan><tspan class="fc15" x="120">|</tspan><tspan class="fc16" x="128">_</tspan><tspan class="fc17" x="136">_</tspan><tspan class="fc18" x="144">_</tspan><tspan class="fc19" x="152">_</tspan><tspan class="fc20" x="160">|</tspan><tspan class="fc21" x="168"> </tspan><tspan class="fc22" x="176">\</tspan><tspan class="fc23" x="184">_</tspan><tspan class="fc24" x="192">_</tspan><tspan class="fc25" x="200">_</tspan><tspan class="fc26" x="208">|</tspan></text>
+</svg>

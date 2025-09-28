@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="163.28" height="73.527" version="1.1" viewBox="0 0 163.28 73.527" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        * {
+            font-family: Courier, monospace;
+            font-size: 14px;
+        }
+        tspan, text {
+            font-variant-ligatures: none;
+            dominant-baseline: central;
+            white-space: pre;
+            fill: #bbbbbb;
+        }
+        .bg {
+            stroke-width: "0.5px";
+        }
+
+        .fc0 { fill: #667eea; }
+        .fc1 { fill: #677be6; }
+        .fc2 { fill: #6879e3; }
+        .fc3 { fill: #6876df; }
+        .fc4 { fill: #6974dc; }
+        .fc5 { fill: #6a71d8; }
+        .fc6 { fill: #6b6fd4; }
+        .fc7 { fill: #6c6cd1; }
+        .fc8 { fill: #6c6acd; }
+        .fc9 { fill: #6d67ca; }
+        .fc10 { fill: #6e65c6; }
+        .fc11 { fill: #6f62c2; }
+        .fc12 { fill: #705fbf; }
+        .fc13 { fill: #705dbb; }
+        .fc14 { fill: #715ab8; }
+        .fc15 { fill: #7258b4; }
+        .fc16 { fill: #7355b0; }
+        .fc17 { fill: #7453ad; }
+        .fc18 { fill: #7450a9; }
+        .fc19 { fill: #754ea6; }
+        .fc20 { fill: #764ba2; }
+    </style>
+<text x="-2.5703125" y="2.9394531"><tspan class="fc0" x="-2.5703125">╔</tspan><tspan class="fc1" x="5.4296875">═</tspan><tspan class="fc2" x="13.429688">═</tspan><tspan class="fc3" x="21.429688">═</tspan><tspan class="fc4" x="29.429688">╗</tspan><tspan class="fc5" x="37.429688">╔</tspan><tspan class="fc6" x="45.429688">═</tspan><tspan class="fc7" x="53.429688">╗</tspan><tspan class="fc8" x="61.429688">╔</tspan><tspan class="fc9" x="69.429688">═</tspan><tspan class="fc10" x="77.429688">╗</tspan><tspan class="fc11" x="85.429688">╔</tspan><tspan class="fc12" x="93.429688">╗</tspan><tspan class="fc13" x="101.42969">─</tspan><tspan class="fc14" x="109.42969">─</tspan><tspan class="fc15" x="117.42969">─</tspan><tspan class="fc16" x="125.42969">╔</tspan><tspan class="fc17" x="133.42969">═</tspan><tspan class="fc18" x="141.42969">═</tspan><tspan class="fc19" x="149.42969">═</tspan><tspan class="fc20" x="157.42969">╗</tspan></text>
+<text x="-2.5703125" y="16.939453"><tspan class="fc0" x="-2.5703125">║</tspan><tspan class="fc1" x="5.4296875">╔</tspan><tspan class="fc2" x="13.429688">═</tspan><tspan class="fc3" x="21.429688">╗</tspan><tspan class="fc4" x="29.429688">║</tspan><tspan class="fc5" x="37.429688">║</tspan><tspan class="fc6" x="45.429688">║</tspan><tspan class="fc7" x="53.429688">╚</tspan><tspan class="fc8" x="61.429688">╝</tspan><tspan class="fc9" x="69.429688">║</tspan><tspan class="fc10" x="77.429688">║</tspan><tspan class="fc11" x="85.429688">║</tspan><tspan class="fc12" x="93.429688">║</tspan><tspan class="fc13" x="101.42969">─</tspan><tspan class="fc14" x="109.42969">─</tspan><tspan class="fc15" x="117.42969">─</tspan><tspan class="fc16" x="125.42969">║</tspan><tspan class="fc17" x="133.42969">╔</tspan><tspan class="fc18" x="141.42969">═</tspan><tspan class="fc19" x="149.42969">╗</tspan><tspan class="fc20" x="157.42969">║</tspan></text>
+<text x="-2.5703125" y="30.939453"><tspan class="fc0" x="-2.5703125">║</tspan><tspan class="fc1" x="5.4296875">║</tspan><tspan class="fc2" x="13.429688">─</tspan><tspan class="fc3" x="21.429688">║</tspan><tspan class="fc4" x="29.429688">║</tspan><tspan class="fc5" x="37.429688">║</tspan><tspan class="fc6" x="45.429688">╔</tspan><tspan class="fc7" x="53.429688">╗</tspan><tspan class="fc8" x="61.429688">╔</tspan><tspan class="fc9" x="69.429688">╗</tspan><tspan class="fc10" x="77.429688">║</tspan><tspan class="fc11" x="85.429688">║</tspan><tspan class="fc12" x="93.429688">║</tspan><tspan class="fc13" x="101.42969">─</tspan><tspan class="fc14" x="109.42969">─</tspan><tspan class="fc15" x="117.42969">─</tspan><tspan class="fc16" x="125.42969">║</tspan><tspan class="fc17" x="133.42969">║</tspan><tspan class="fc18" x="141.42969">─</tspan><tspan class="fc19" x="149.42969">╚</tspan><tspan class="fc20" x="157.42969">╝</tspan></text>
+<text x="-2.5703125" y="44.939453"><tspan class="fc0" x="-2.5703125">║</tspan><tspan class="fc1" x="5.4296875">║</tspan><tspan class="fc2" x="13.429688">─</tspan><tspan class="fc3" x="21.429688">║</tspan><tspan class="fc4" x="29.429688">║</tspan><tspan class="fc5" x="37.429688">║</tspan><tspan class="fc6" x="45.429688">║</tspan><tspan class="fc7" x="53.429688">║</tspan><tspan class="fc8" x="61.429688">║</tspan><tspan class="fc9" x="69.429688">║</tspan><tspan class="fc10" x="77.429688">║</tspan><tspan class="fc11" x="85.429688">║</tspan><tspan class="fc12" x="93.429688">║</tspan><tspan class="fc13" x="101.42969">─</tspan><tspan class="fc14" x="109.42969">╔</tspan><tspan class="fc15" x="117.42969">╗</tspan><tspan class="fc16" x="125.42969">║</tspan><tspan class="fc17" x="133.42969">║</tspan><tspan class="fc18" x="141.42969">╔</tspan><tspan class="fc19" x="149.42969">═</tspan><tspan class="fc20" x="157.42969">╗</tspan></text>
+<text x="-2.5703125" y="58.939453"><tspan class="fc0" x="-2.5703125">║</tspan><tspan class="fc1" x="5.4296875">╚</tspan><tspan class="fc2" x="13.429688">═</tspan><tspan class="fc3" x="21.429688">╝</tspan><tspan class="fc4" x="29.429688">║</tspan><tspan class="fc5" x="37.429688">║</tspan><tspan class="fc6" x="45.429688">║</tspan><tspan class="fc7" x="53.429688">║</tspan><tspan class="fc8" x="61.429688">║</tspan><tspan class="fc9" x="69.429688">║</tspan><tspan class="fc10" x="77.429688">║</tspan><tspan class="fc11" x="85.429688">║</tspan><tspan class="fc12" x="93.429688">╚</tspan><tspan class="fc13" x="101.42969">═</tspan><tspan class="fc14" x="109.42969">╝</tspan><tspan class="fc15" x="117.42969">║</tspan><tspan class="fc16" x="125.42969">║</tspan><tspan class="fc17" x="133.42969">╚</tspan><tspan class="fc18" x="141.42969">╩</tspan><tspan class="fc19" x="149.42969">═</tspan><tspan class="fc20" x="157.42969">║</tspan></text>
+<text x="-2.5703125" y="72.939453"><tspan class="fc0" x="-2.5703125">╚</tspan><tspan class="fc1" x="5.4296875">═</tspan><tspan class="fc2" x="13.429688">═</tspan><tspan class="fc3" x="21.429688">═</tspan><tspan class="fc4" x="29.429688">╝</tspan><tspan class="fc5" x="37.429688">╚</tspan><tspan class="fc6" x="45.429688">╝</tspan><tspan class="fc7" x="53.429688">╚</tspan><tspan class="fc8" x="61.429688">╝</tspan><tspan class="fc9" x="69.429688">╚</tspan><tspan class="fc10" x="77.429688">╝</tspan><tspan class="fc11" x="85.429688">╚</tspan><tspan class="fc12" x="93.429688">═</tspan><tspan class="fc13" x="101.42969">═</tspan><tspan class="fc14" x="109.42969">═</tspan><tspan class="fc15" x="117.42969">╝</tspan><tspan class="fc16" x="125.42969">╚</tspan><tspan class="fc17" x="133.42969">═</tspan><tspan class="fc18" x="141.42969">═</tspan><tspan class="fc19" x="149.42969">═</tspan><tspan class="fc20" x="157.42969">╝</tspan></text>
+</svg>

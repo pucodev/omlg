@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300.49" height="66.206" version="1.1" viewBox="0 0 300.49 66.206" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        * {
+            font-family: Courier, monospace;
+            font-size: 14px;
+        }
+        tspan, text {
+            font-variant-ligatures: none;
+            dominant-baseline: central;
+            white-space: pre;
+            fill: #bbbbbb;
+        }
+        .bg {
+            stroke-width: "0.5px";
+        }
+
+        .fc0 { fill: #667eea; }
+        .fc1 { fill: #667de8; }
+        .fc2 { fill: #677be6; }
+        .fc3 { fill: #677ae4; }
+        .fc4 { fill: #6878e2; }
+        .fc5 { fill: #6877e0; }
+        .fc6 { fill: #6976de; }
+        .fc7 { fill: #6974dc; }
+        .fc8 { fill: #6973da; }
+        .fc9 { fill: #6a72d8; }
+        .fc10 { fill: #6a70d7; }
+        .fc11 { fill: #6b6fd5; }
+        .fc12 { fill: #6b6dd3; }
+        .fc13 { fill: #6c6cd1; }
+        .fc14 { fill: #6c6bcf; }
+        .fc15 { fill: #6c69cd; }
+        .fc16 { fill: #6d68cb; }
+        .fc17 { fill: #6d67c9; }
+        .fc18 { fill: #6e65c7; }
+        .fc19 { fill: #6e64c5; }
+        .fc20 { fill: #6f62c3; }
+        .fc21 { fill: #6f61c1; }
+        .fc22 { fill: #7060bf; }
+        .fc23 { fill: #705ebd; }
+        .fc24 { fill: #705dbb; }
+        .fc25 { fill: #715cb9; }
+        .fc26 { fill: #715ab7; }
+        .fc27 { fill: #7259b5; }
+        .fc28 { fill: #7257b4; }
+        .fc29 { fill: #7356b2; }
+        .fc30 { fill: #7355b0; }
+        .fc31 { fill: #7353ae; }
+        .fc32 { fill: #7452ac; }
+        .fc33 { fill: #7451aa; }
+        .fc34 { fill: #754fa8; }
+        .fc35 { fill: #754ea6; }
+        .fc36 { fill: #764ca4; }
+        .fc37 { fill: #764ba2; }
+    </style>
+<text y="4.0599747"><tspan class="fc0" x="0"> </tspan><tspan class="fc1" x="8"> </tspan><tspan class="fc2" x="16"> </tspan><tspan class="fc3" x="24">_</tspan><tspan class="fc4" x="32">|</tspan><tspan class="fc5" x="40">_</tspan><tspan class="fc6" x="48">|</tspan><tspan class="fc7" x="56"> </tspan><tspan class="fc8" x="64"> </tspan><tspan class="fc9" x="72"> </tspan><tspan class="fc10" x="80">_</tspan><tspan class="fc11" x="88">|</tspan><tspan class="fc12" x="96"> </tspan><tspan class="fc13" x="104"> </tspan><tspan class="fc14" x="112"> </tspan><tspan class="fc15" x="120"> </tspan><tspan class="fc16" x="128"> </tspan><tspan class="fc17" x="136"> </tspan><tspan class="fc18" x="144">_</tspan><tspan class="fc19" x="152">|</tspan><tspan class="fc20" x="160"> </tspan><tspan class="fc21" x="168">_</tspan><tspan class="fc22" x="176">|</tspan><tspan class="fc23" x="184"> </tspan><tspan class="fc24" x="192"> </tspan><tspan class="fc25" x="200"> </tspan><tspan class="fc26" x="208"> </tspan><tspan class="fc27" x="216"> </tspan><tspan class="fc28" x="224"> </tspan><tspan class="fc29" x="232"> </tspan><tspan class="fc30" x="240"> </tspan><tspan class="fc31" x="248"> </tspan><tspan class="fc32" x="256">_</tspan><tspan class="fc33" x="264">|</tspan><tspan class="fc34" x="272">_</tspan><tspan class="fc35" x="280">|</tspan><tspan class="fc36" x="288">_</tspan><tspan class="fc37" x="296">|</tspan></text>
+<text y="18.059975"><tspan class="fc0" x="0"> </tspan><tspan class="fc1" x="8">_</tspan><tspan class="fc2" x="16">|</tspan><tspan class="fc3" x="24"> </tspan><tspan class="fc4" x="32"> </tspan><tspan class="fc5" x="40"> </tspan><tspan class="fc6" x="48"> </tspan><tspan class="fc7" x="56">_</tspan><tspan class="fc8" x="64">|</tspan><tspan class="fc9" x="72"> </tspan><tspan class="fc10" x="80">_</tspan><tspan class="fc11" x="88">|</tspan><tspan class="fc12" x="96">_</tspan><tspan class="fc13" x="104">|</tspan><tspan class="fc14" x="112"> </tspan><tspan class="fc15" x="120"> </tspan><tspan class="fc16" x="128">_</tspan><tspan class="fc17" x="136">|</tspan><tspan class="fc18" x="144">_</tspan><tspan class="fc19" x="152">|</tspan><tspan class="fc20" x="160"> </tspan><tspan class="fc21" x="168">_</tspan><tspan class="fc22" x="176">|</tspan><tspan class="fc23" x="184"> </tspan><tspan class="fc24" x="192"> </tspan><tspan class="fc25" x="200"> </tspan><tspan class="fc26" x="208"> </tspan><tspan class="fc27" x="216"> </tspan><tspan class="fc28" x="224"> </tspan><tspan class="fc29" x="232"> </tspan><tspan class="fc30" x="240">_</tspan><tspan class="fc31" x="248">|</tspan></text>
+<text y="32.059975"><tspan class="fc0" x="0"> </tspan><tspan class="fc1" x="8">_</tspan><tspan class="fc2" x="16">|</tspan><tspan class="fc3" x="24"> </tspan><tspan class="fc4" x="32"> </tspan><tspan class="fc5" x="40"> </tspan><tspan class="fc6" x="48"> </tspan><tspan class="fc7" x="56">_</tspan><tspan class="fc8" x="64">|</tspan><tspan class="fc9" x="72"> </tspan><tspan class="fc10" x="80">_</tspan><tspan class="fc11" x="88">|</tspan><tspan class="fc12" x="96"> </tspan><tspan class="fc13" x="104"> </tspan><tspan class="fc14" x="112">_</tspan><tspan class="fc15" x="120">|</tspan><tspan class="fc16" x="128"> </tspan><tspan class="fc17" x="136"> </tspan><tspan class="fc18" x="144">_</tspan><tspan class="fc19" x="152">|</tspan><tspan class="fc20" x="160"> </tspan><tspan class="fc21" x="168">_</tspan><tspan class="fc22" x="176">|</tspan><tspan class="fc23" x="184"> </tspan><tspan class="fc24" x="192"> </tspan><tspan class="fc25" x="200"> </tspan><tspan class="fc26" x="208"> </tspan><tspan class="fc27" x="216"> </tspan><tspan class="fc28" x="224"> </tspan><tspan class="fc29" x="232"> </tspan><tspan class="fc30" x="240">_</tspan><tspan class="fc31" x="248">|</tspan><tspan class="fc32" x="256"> </tspan><tspan class="fc33" x="264"> </tspan><tspan class="fc34" x="272">_</tspan><tspan class="fc35" x="280">|</tspan><tspan class="fc36" x="288">_</tspan><tspan class="fc37" x="296">|</tspan></text>
+<text y="46.059975"><tspan class="fc0" x="0"> </tspan><tspan class="fc1" x="8">_</tspan><tspan class="fc2" x="16">|</tspan><tspan class="fc3" x="24"> </tspan><tspan class="fc4" x="32"> </tspan><tspan class="fc5" x="40"> </tspan><tspan class="fc6" x="48"> </tspan><tspan class="fc7" x="56">_</tspan><tspan class="fc8" x="64">|</tspan><tspan class="fc9" x="72"> </tspan><tspan class="fc10" x="80">_</tspan><tspan class="fc11" x="88">|</tspan><tspan class="fc12" x="96"> </tspan><tspan class="fc13" x="104"> </tspan><tspan class="fc14" x="112"> </tspan><tspan class="fc15" x="120"> </tspan><tspan class="fc16" x="128"> </tspan><tspan class="fc17" x="136"> </tspan><tspan class="fc18" x="144">_</tspan><tspan class="fc19" x="152">|</tspan><tspan class="fc20" x="160"> </tspan><tspan class="fc21" x="168">_</tspan><tspan class="fc22" x="176">|</tspan><tspan class="fc23" x="184"> </tspan><tspan class="fc24" x="192"> </tspan><tspan class="fc25" x="200"> </tspan><tspan class="fc26" x="208"> </tspan><tspan class="fc27" x="216"> </tspan><tspan class="fc28" x="224"> </tspan><tspan class="fc29" x="232"> </tspan><tspan class="fc30" x="240">_</tspan><tspan class="fc31" x="248">|</tspan><tspan class="fc32" x="256"> </tspan><tspan class="fc33" x="264"> </tspan><tspan class="fc34" x="272"> </tspan><tspan class="fc35" x="280"> </tspan><tspan class="fc36" x="288">_</tspan><tspan class="fc37" x="296">|</tspan></text>
+<text y="60.059975"><tspan class="fc0" x="0"> </tspan><tspan class="fc1" x="8"> </tspan><tspan class="fc2" x="16"> </tspan><tspan class="fc3" x="24">_</tspan><tspan class="fc4" x="32">|</tspan><tspan class="fc5" x="40">_</tspan><tspan class="fc6" x="48">|</tspan><tspan class="fc7" x="56"> </tspan><tspan class="fc8" x="64"> </tspan><tspan class="fc9" x="72"> </tspan><tspan class="fc10" x="80">_</tspan><tspan class="fc11" x="88">|</tspan><tspan class="fc12" x="96"> </tspan><tspan class="fc13" x="104"> </tspan><tspan class="fc14" x="112"> </tspan><tspan class="fc15" x="120"> </tspan><tspan class="fc16" x="128"> </tspan><tspan class="fc17" x="136"> </tspan><tspan class="fc18" x="144">_</tspan><tspan class="fc19" x="152">|</tspan><tspan class="fc20" x="160"> </tspan><tspan class="fc21" x="168">_</tspan><tspan class="fc22" x="176">|</tspan><tspan class="fc23" x="184">_</tspan><tspan class="fc24" x="192">|</tspan><tspan class="fc25" x="200">_</tspan><tspan class="fc26" x="208">|</tspan><tspan class="fc27" x="216">_</tspan><tspan class="fc28" x="224">|</tspan><tspan class="fc29" x="232"> </tspan><tspan class="fc30" x="240"> </tspan><tspan class="fc31" x="248"> </tspan><tspan class="fc32" x="256">_</tspan><tspan class="fc33" x="264">|</tspan><tspan class="fc34" x="272">_</tspan><tspan class="fc35" x="280">|</tspan><tspan class="fc36" x="288">_</tspan><tspan class="fc37" x="296">|</tspan></text>
+</svg>
