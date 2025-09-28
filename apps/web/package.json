@@ -10,7 +10,7 @@
   },
   "scripts": {
     "astro": "astro",
-    "build": "astro build",
+    "build": "astro build --mode production",
     "dev": "astro dev",
     "lint": "eslint .",
     "prepare": "husky",
