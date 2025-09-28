@@ -219,6 +219,11 @@ html {
   --pui-icon-size: 32px;
 }
 
+.section--support {
+  background-color: #f8fbff;
+  background: linear-gradient(180deg, #fff 0%, #f8fbff 5%);
+}
+
 /* PUCOUI */
 .image img {
   height: auto;
