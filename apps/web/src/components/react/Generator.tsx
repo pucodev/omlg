@@ -32,7 +32,7 @@ export default function Generator() {
     OMLG_BLOCKS[0].name,
   )
   const [isLoading, setIsLoading] = useState(false)
-  let filename = useRef('')
+  const filename = useRef('')
 
   const gradientDirectionValues: GradientDirection[] = [
     'vertical',

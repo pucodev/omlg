@@ -1,11 +1,13 @@
 import stylistic from '@stylistic/eslint-plugin'
+import eslintPluginAstro from 'eslint-plugin-astro'
 import tsdoc from 'eslint-plugin-tsdoc'
 import neostandard from 'neostandard'
 
 export default [
   {
-    ignores: ['**/.astro/**', '**/dist/**'],
+    ignores: ['**/.astro/**', '**/dist/**', '**/GtmHead.astro'],
   },
+  ...eslintPluginAstro.configs.recommended,
   ...neostandard({
     ts: true,
   }),
@@ -38,6 +40,21 @@ export default [
       '@stylistic/jsx-quotes': ['error', 'prefer-double'],
       '@stylistic/jsx-curly-newline': 'off',
       'tsdoc/syntax': 'warn',
+    },
+  },
+  {
+    files: ['**/*.astro'],
+    languageOptions: {
+      parser: eslintPluginAstro.parser,
+    },
+    rules: {
+      'react/self-closing-comp': 'off',
+      'react/jsx-key': 'off',
+      '@stylistic/jsx-indent': 'off',
+      '@stylistic/jsx-first-prop-new-line': 'off',
+      '@stylistic/space-before-function-paren': 'off',
+      '@stylistic/jsx-closing-bracket-location': 'off',
+      '@stylistic/jsx-closing-tag-location': 'off',
     },
   },
 ]
