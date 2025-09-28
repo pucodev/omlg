@@ -1,0 +1,9 @@
+services:
+  omlg-api:
+    build:
+      context: ../../../apps/api
+      dockerfile: ../../docker/prod/api/Dockerfile
+    container_name: ${CONTAINER_NAME:-omlg-api}
+    ports:
+      - '${PORT:-3000}:3000'
+    restart: always

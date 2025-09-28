@@ -121,7 +121,7 @@ export interface OmlOptions {
     omlOptions.push(palette)
 
     const child = spawn(
-      'bash',
+      'sh',
       [
         '-c',
         `oh-my-logo "${text}" --color ${omlOptions.join(' ')} | ansisvg --transparent --grid`,
