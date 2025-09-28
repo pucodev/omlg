@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks'
+import { useEffect, useRef, useState } from 'preact/hooks'
 
 import SvgLogoText from '#assets/logo-text.svg'
 import SvgLogoFilled from '#assets/logo.svg'
@@ -32,6 +32,7 @@ export default function Generator() {
     OMLG_BLOCKS[0].name,
   )
   const [isLoading, setIsLoading] = useState(false)
+  let filename = useRef('')
 
   const gradientDirectionValues: GradientDirection[] = [
     'vertical',
@@ -70,6 +71,8 @@ export default function Generator() {
         block_font: blockFont,
       })
       setSvg(response.data)
+      filename.current = `${text.replace('.', '')}_${palette}`
+      console.log('filename = ', filename)
     } catch (error) {}
     setIsLoading(false)
   }
@@ -81,6 +84,77 @@ export default function Generator() {
    */
   function selectPalette(palette: OmlgPaletteITem) {
     setPalette(palette.name)
+  }
+
+  function downloadImage(
+    svgString: string,
+    fileName = 'image',
+    format: 'svg' | 'png' = 'svg',
+    minWidth = 800,
+  ) {
+    if (format === 'svg') {
+      const blob = new Blob([svgString], {
+        type: 'image/svg+xml;charset=utf-8',
+      })
+      const url = URL.createObjectURL(blob)
+
+      const a = document.createElement('a')
+      a.href = url
+      a.download = `${fileName}.svg`
+      document.body.appendChild(a)
+      a.click()
+      document.body.removeChild(a)
+
+      URL.revokeObjectURL(url)
+    } else if (format === 'png') {
+      const img = new Image()
+      const svgBlob = new Blob([svgString], {
+        type: 'image/svg+xml;charset=utf-8',
+      })
+      const url = URL.createObjectURL(svgBlob)
+
+      img.onload = () => {
+        let width = img.width
+        let height = img.height
+
+        // Scale keeping aspect ratio if less than minimum width
+        if (width < minWidth) {
+          const scale = minWidth / width
+          width = minWidth
+          height = height * scale
+        }
+
+        const canvas = document.createElement('canvas')
+        const ctx = canvas.getContext('2d')
+
+        canvas.width = width
+        canvas.height = height
+
+        if (ctx) {
+          ctx.drawImage(img, 0, 0, width, height)
+
+          canvas.toBlob(blob => {
+            if (blob) {
+              const pngUrl = URL.createObjectURL(blob)
+              const a = document.createElement('a')
+              a.href = pngUrl
+              a.download = `${fileName}.png`
+              document.body.appendChild(a)
+              a.click()
+              document.body.removeChild(a)
+
+              URL.revokeObjectURL(pngUrl)
+            }
+          })
+
+          URL.revokeObjectURL(url)
+        }
+      }
+
+      img.src = url
+    } else {
+      console.error("Format not supported. Use 'svg' or 'png'.")
+    }
   }
 
   return (
@@ -197,11 +271,25 @@ export default function Generator() {
                   {/* <!-- DOWNLOAD --> */}
                   <div class="is-font-bold mb-1">Download:</div>
                   <div className="is-hstack">
-                    <button className="btn w-100 is-outlined">SVG</button>
-                    <button className="btn w-100 is-outlined">PNG</button>
-                    <button className="btn w-100 is-outlined" disabled>
-                      URL
+                    <button
+                      disabled={!svg || isLoading}
+                      onClick={() => downloadImage(svg, filename.current)}
+                      className="btn w-100 is-outlined"
+                    >
+                      SVG
                     </button>
+                    <button
+                      disabled={!svg || isLoading}
+                      onClick={() =>
+                        downloadImage(svg, filename.current, 'png')
+                      }
+                      className="btn w-100 is-outlined"
+                    >
+                      PNG
+                    </button>
+                    {/* <button className="btn w-100 is-outlined" disabled> */}
+                    {/*   URL */}
+                    {/* </button> */}
                   </div>
                 </div>
               </div>
