@@ -7,3 +7,10 @@ services:
     ports:
       - '${PORT:-3000}:3000'
     restart: always
+    networks:
+      - omlg-network
+
+networks:
+  omlg-network:
+    external: true
+    name: ${NETWORK_NAME:-omlg-network}
