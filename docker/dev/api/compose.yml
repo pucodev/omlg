@@ -1,0 +1,18 @@
+services:
+  omlg-api:
+    build:
+      context: ../../../apps/api
+      dockerfile: ../../docker/dev/api/Dockerfile
+    container_name: ${CONTAINER_NAME:-omlg-api}
+    ports:
+      - '${PORT:-3000}:3000'
+    restart: always
+    volumes:
+      - ../../../apps/api/src:/app/src
+    networks:
+      - omlg-network
+
+networks:
+  omlg-network:
+    external: true
+    name: ${NETWORK_NAME:-omlg-network}
