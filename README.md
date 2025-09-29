@@ -28,6 +28,25 @@ With **OMLG** you can create custom logos from text, customize colors, gradients
 
 ---
 
+## 🌟 Showcase
+
+Discover how the community is using **Oh My Logo Generator (OMLG)** in their projects:
+
+- [Your project](https://github.com/pucodev/omlg/issues/1)
+
+### Want to share your project?
+
+We’d love to see how you’re using OMLG! 🚀
+
+👉 Leave a comment in our pinned [Showcase Issue](https://github.com/pucodev/omlg/issues/1) with:
+
+- 🔗 A link to your project (GitHub repo, website, or app)
+- 📝 A short description of how OMLG is helping you
+
+Your project will be featured directly in this README ✨
+
+---
+
 ## 🤝 Support This Project
 
 This project is open-source and free to use.
@@ -47,7 +66,7 @@ Help me keep building new features and maintaining this tool:
 ### 🖤 Use & Share
 
 - Use OMLG in your personal or commercial projects.
-- Open a PR if you’re using it — we’ll be happy to showcase your project in the README.
+- [Leave a comment](https://github.com/pucodev/omlg/issues/1) if you’re using it — we’ll be happy to showcase your project in the README.
 
 ---
 
