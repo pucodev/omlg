@@ -1,0 +1,20 @@
+---
+const base = `${import.meta.env.BASE_URL}/favicon`
+const version = `?v=${+new Date()}`
+---
+
+<link
+  rel="icon"
+  type="image/png"
+  href={`${base}/favicon-96x96.png${version}`}
+  sizes="96x96"
+/>
+<link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg${version}`} />
+<link rel="shortcut icon" href={`${base}/favicon.ico${version}`} />
+<link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href={`${base}/apple-touch-icon.png${version}`}
+/>
+<meta name="apple-mobile-web-app-title" content="OMLG" />
+<link rel="manifest" href={`${base}/site.webmanifest${version}`} />
