@@ -72,7 +72,6 @@ export default function Generator() {
       })
       setSvg(response.data)
       filename.current = `${text.replace('.', '')}_${palette}`
-      console.log('filename = ', filename)
     } catch (error) {}
     setIsLoading(false)
   }

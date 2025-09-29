@@ -20,7 +20,6 @@ export default function Slider({ onSelectPalette }: SliderProps) {
   const glideRef = useRef<Glide>(null)
   const items = OMLG_PALLETE
   const [selectedItem, setSelectedItem] = useState(0)
-  console.log('RENDER SLIDER')
 
   /**
    * Handle select palette
@@ -78,7 +77,6 @@ export default function Slider({ onSelectPalette }: SliderProps) {
       })
 
       glideRef.current.mount()
-      console.log('RENDER USEEFFECT')
 
       return () => glideRef.current?.destroy()
     }
